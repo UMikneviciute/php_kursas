@@ -499,6 +499,11 @@ textarea {
      margin-top: 66px;
 }
 
+#logo {
+    width: 65px;
+    height: 65px;
+}
+
 .footer .logo h2 {
     margin: 4px auto 11px 17px;
     font-family: 'Playfair Display', serif;

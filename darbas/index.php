@@ -1,3 +1,7 @@
+<?php
+    require __DIR__ . '/src/app.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,13 +16,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="./css/normalize.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="../darbas/css/normalize.css">
+    <link rel="stylesheet" href="../darbas/css/style.css">
 </head>
 <body>
     <header class="site-header flex-container">
         <div class="logo flex-container">
-            <a href="#"><img src="Images/logo.jpeg" alt="logo of recepies"></a>
+            <a href="#"><img src="../darbas/images/logo.png" alt="logo of recepies"></a>
             <h2>Recipes</h2>
         </div>
         <div class="flex-container">
@@ -57,7 +61,7 @@
                 <button>Let's Go!</button>
             </div>
             <div class="right">
-                <img src="./Images/main-photo.jpg" alt="placeholder">
+                <img src="../darbas/images/main-photo.jpg" alt="photo of tomatos">
             </div> 
         </div>
     </section>
@@ -67,13 +71,13 @@
             <h3 id="recipes">Recipes</h3>
             <nav class="recipes">
                 <ul class="flex-container">
-                    <li><a href="#breakfast-recipes"><img src="./Images/breakfast.jpg" alt="breakfast"></a> <!--nuotrauka turi nuvesti į turinio vietą-->
+                    <li><a href="#breakfast-recipes"><img src="../darbas/images/breakfast.jpg" alt="breakfast"></a> <!--nuotrauka turi nuvesti į turinio vietą-->
                         <h3>Breakfast</h3>
                         <p>Placeholder</p></li>
-                    <li><a href="#lunch-recipes"><img src="./Images/lunch.jpg" alt="lunch"></a> <!--nuotrauka turi nuvesti į turinio vietą-->
+                    <li><a href="#lunch-recipes"><img src="../darbas/images/lunch.jpg" alt="lunch"></a> <!--nuotrauka turi nuvesti į turinio vietą-->
                         <h3>Lunch</h3>
                         <p>Placeholder</p></li>
-                    <li><a href="#dinner-recipes"><img src="./Images/dinner.jpg" alt="dinner"></a> <!--nuotrauka turi nuvesti į turinio vietą-->
+                    <li><a href="#dinner-recipes"><img src="../darbas/images/dinner.jpg" alt="dinner"></a> <!--nuotrauka turi nuvesti į turinio vietą-->
                         <h3>Dinner</h3>
                         <p>Placeholder</p></li>
                 </ul>
@@ -84,7 +88,7 @@
         <div class="container">
             <h2 id="breakfast-recipes">Breakfast Recipes</h2>
             <div class="breakfast1 flex-container">
-                <img src="/Darbas/Images/breakfast1.jpg" alt="Random breakfast1">
+                <img src="../darbas/images/breakfast1.jpg" alt="Random breakfast1">
                 <div class="instructions">
                     <h3>Breakfast No1</h3>
                     <ul>
@@ -98,7 +102,7 @@
                 </div>
             </div>
             <div class="breakfast2 flex-container">
-                <img src="/Darbas/Images/breakfast2.jpg" alt="Random breakfast2">
+                <img src="../darbas/images/breakfast2.jpg" alt="Random breakfast2">
                 <div>
                     <h3>Breakfast No2</h3>
                     <ul>
@@ -117,7 +121,7 @@
         <div class="container">
             <h2 id="lunch-recipes">Lunch Recipes</h2>
             <div class="lunch1 flex-container">
-                <img src="/Darbas/Images/lunch1.jpg" alt="Random lunch1">
+                <img src="../darbas/images/lunch1.jpg" alt="Random lunch1">
                 <div class="instructions">
                     <h3>Lunch No1</h3>
                     <ul>
@@ -131,7 +135,7 @@
                 </div>
             </div>
             <div class="lunch2 flex-container">
-                <img src="/Darbas/Images/lunch2.jpg" alt="Random lunch2">
+                <img src="../darbas/images/lunch2.jpg" alt="Random lunch2">
                 <div>
                     <h3>Lunch No2</h3>
                     <ul>
@@ -150,7 +154,7 @@
         <div class="container">
             <h2 id="dinner-recipes">Dinner Recipes</h2>
             <div class="dinner1 flex-container">
-                <img src="/Darbas/Images/dinner1.jpg" alt="Random dinner1">
+                <img src="../darbas/images/dinner1.jpg" alt="Random dinner1">
                 <div class="instructions">
                     <h3>Dinner No1</h3>
                     <ul>
@@ -164,7 +168,7 @@
                 </div>
             </div>
             <div class="dinner2 flex-container">
-                <img src="/Darbas/Images/dinner2.jpg" alt="Random dinner2">
+                <img src="../darbas/images/dinner2.jpg" alt="Random dinner2">
                 <div>
                     <h3>Dinner No2</h3>
                     <ul>
@@ -192,7 +196,7 @@
                     </div>
                     <div class="bottom flex-container">
                         <div class="flex-container">
-                            <img src="/Darbas/Images/testimonial1.png" alt="Reader's face">
+                            <img src="../darbas/images/testimonial1.png" alt="Reader's face">
                             <div class="reader-info">
                                 <i class="bi bi-star-fill"></i>
                                 <i class="bi bi-star-fill"></i>
@@ -203,7 +207,7 @@
                                 <p>United States</p>
                             </div>
                         </div>
-                        <img src="/Darbas/Images/kabutes.png" alt="quotes">
+                        <img src="../darbas/images/kabutes.png" alt="quotes">
                     </div>
                 </div>
                 <div class="testimonials-content-box">
@@ -212,7 +216,7 @@
                     </div>
                     <div class="bottom flex-container">
                         <div class="flex-container">
-                            <img src="/Darbas/Images/testimonial2.png" alt="Reader's face">
+                            <img src="../darbas/images/testimonial2.png" alt="Reader's face">
                             <div class="reader-info">
                                 <i class="bi bi-star-fill"></i>
                                 <i class="bi bi-star-fill"></i>
@@ -223,7 +227,7 @@
                                 <p>United Kingdom</p>
                             </div>
                         </div>
-                        <img src="/Darbas/Images/kabutes.png" alt="quotes">
+                        <img src="../darbas/images/kabutes.png" alt="quotes">
                     </div>
                 </div>
             </div>
@@ -235,13 +239,12 @@
                 <h2>Get in touch with us!</h2>
                 <p>Share your ideas or any feedback. We are looking forward to hear from you!</p>
             </div>
-                <form class="contact-form">
-                    <input type="text" name="name" placeholder="Name"><br>
-                    <input type="email" name="email" placeholder="Email"><br>
-                    <input type="tel" name="phone" placeholder="Phone"><br>
-                    <input type="text" name="" placeholder="Sugestions"><br>
+                <form id="contact-form" class="contact-form" action="index.php" method="post">
+                    <input required type="text" name="name" placeholder="Name"><br>
+                    <input required type="email" name="email" placeholder="Email"><br>
+                    <input required type="tel" name="phone" placeholder="Phone"><br>
                     <textarea name="message" placeholder="Any note for us?" rows="8"></textarea><br>
-                    <button class="btn btn-form">Submit</button>
+                    <button name="submit" type="submit" class="btn btn-form">Submit</button>
                 </form>
             </div>
     </section>
@@ -254,7 +257,7 @@
             <div class="blog-content flex-container">
                 <div class="blog-content-item">
                     <div class="blog-image">
-                        <img src="#" alt="">
+                        <img src="../darbas/images/spices.jpg" alt="spices">
                     </div>
                     <div class="blog-text">
                         <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
@@ -263,7 +266,7 @@
                 </div>
                 <div class="blog-content-item">
                     <div class="blog-image">
-                        <img src="#" alt="">
+                        <img src="../darbas/images/mindfulness.jpg" alt="mindfulness">
                     </div>
                     <div class="blog-text">
                         <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
@@ -272,7 +275,7 @@
                 </div>
                 <div class="blog-content-item">
                     <div class="blog-image">
-                        <img src="#" alt="">
+                        <img src="../darbas/images/protein.jpg" alt="protein">
                     </div>
                     <div class="blog-text">
                         <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
@@ -287,7 +290,7 @@
         <div class="container">
             <div class="footer-social flex-container">
                 <div class="logo flex-container">
-                    <a href="#"><img src="Images/logo.jpeg" alt="logo of recepies"></a>
+                    <a href="#"><img id="logo" src="../darbas/images/logo.png" alt="logo of recepies"></a>
                     <h2>Recipes</h2>
                 </div> 
                 <nav class="social-nav">
