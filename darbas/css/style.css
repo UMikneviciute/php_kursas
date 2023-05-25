@@ -17,6 +17,10 @@ body {
 
 /*HEADER*/
 
+.site-header .logo img {
+    max-width: 33px;
+}
+
 ul {
     padding: 0;
 }
@@ -30,6 +34,18 @@ ul {
     padding: 0 60px;
 }
 
+.site-header div:first-of-type {
+    align-items: center;
+}
+
+.site-header h2 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 1.75rem;
+    line-height: 125%;
+    margin-left: 12px;
+}
+
 .container {
     border: solid 1px red;
     max-width: 1200px;
@@ -39,7 +55,7 @@ ul {
 }
 
 .flex-container {
-    /* border: solid 1px yellow; */
+    border: solid 1px yellow;
     display: flex;
 }
 
@@ -124,12 +140,21 @@ padding: 0;
     border: solid 10px #EBF3F5;
     margin: 135px 611px 136px 100px;
 
+}
 
- /* width: 561px;
-    height: 663px;
-    top: 256px;
-    left: 999px;
-    position: absolute; */
+.left p:first-of-type {
+    font-size: 0.9375rem;
+    font-weight: 600;
+    line-height: 154%;
+    letter-spacing: 10%;
+    text-transform: uppercase;
+    color: #5c8692;
+}
+
+.left i {
+    color: #5c8692;
+    margin-right: 9px;
+
 }
 
 .left h1 {
@@ -452,6 +477,8 @@ textarea {
 
 .blog-content-item {
     background-color: #EBF3F5;
+    border: solid 1px green;
+    max-width: 370px;
     /*trūksta tarpų tarp elementų */
 }
 

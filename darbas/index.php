@@ -22,7 +22,7 @@
 <body>
     <header class="site-header flex-container">
         <div class="logo flex-container">
-            <a href="#"><img src="../darbas/images/logo.png" alt="logo of recepies"></a>
+            <a href="#"><img src="./images/header_logo.png" alt="logo of recepies"></a>
             <h2>Recipes</h2>
         </div>
         <div class="flex-container">
@@ -56,12 +56,14 @@
     <section class="hero">
         <div class="container flex-container">
             <div class="left">
+                <p><i class="bi bi-patch-exclamation-fill"></i>Vegetable power!!!</p>
                 <h1 id="home">Placeholder is cool</h1>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto aut nostrum</p>
                 <button>Let's Go!</button>
             </div>
             <div class="right">
-                <img src="../darbas/images/main-photo.jpg" alt="photo of tomatos">
+                <div class="background-photo"></div>
+                <img src="../darbas/images/main-photo.jpg" alt="photo of tomatoes">
             </div> 
         </div>
     </section>
@@ -290,7 +292,7 @@
         <div class="container">
             <div class="footer-social flex-container">
                 <div class="logo flex-container">
-                    <a href="#"><img id="logo" src="../darbas/images/logo.png" alt="logo of recepies"></a>
+                    <a href="#"><img id="logo" src="./images/footer_logo.png" alt="logo of recepies"></a>
                     <h2>Recipes</h2>
                 </div> 
                 <nav class="social-nav">
