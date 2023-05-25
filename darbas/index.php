@@ -57,8 +57,8 @@
         <div class="container flex-container">
             <div class="left">
                 <p><i class="bi bi-patch-exclamation-fill"></i>Vegetable power!!!</p>
-                <h1 id="home">Placeholder is cool</h1>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto aut nostrum</p>
+                <h1 id="home">A wellness spring with whole plant recipes</h1>
+                <p>Step into our welcoming sanctuary as we celebrate the power of whole plant recipes.</p>
                 <button>Let's Go!</button>
             </div>
             <div class="right">
@@ -75,13 +75,13 @@
                 <ul class="flex-container">
                     <li><a href="#breakfast-recipes"><img src="../darbas/images/breakfast.jpg" alt="breakfast"></a> <!--nuotrauka turi nuvesti į turinio vietą-->
                         <h3>Breakfast</h3>
-                        <p>Placeholder</p></li>
+                        <p>Start your day with vibrant energy and nourishment. Explore our mouthwatering whole food plant-based breakfast recipes!</p></li>
                     <li><a href="#lunch-recipes"><img src="../darbas/images/lunch.jpg" alt="lunch"></a> <!--nuotrauka turi nuvesti į turinio vietą-->
                         <h3>Lunch</h3>
-                        <p>Placeholder</p></li>
+                        <p>Revitalize your midday with wholesome goodness. Dive into our captivating whole food plant-based lunch recipes.</p></li>
                     <li><a href="#dinner-recipes"><img src="../darbas/images/dinner.jpg" alt="dinner"></a> <!--nuotrauka turi nuvesti į turinio vietą-->
                         <h3>Dinner</h3>
-                        <p>Placeholder</p></li>
+                        <p>Elevate your evenings with flavorful delights. Discover our enticing whole food plant-based dinner recipes.</p></li>
                 </ul>
             </nav>
         </div> 
@@ -90,31 +90,31 @@
         <div class="container">
             <h2 id="breakfast-recipes">Breakfast Recipes</h2>
             <div class="breakfast1 flex-container">
-                <img src="../darbas/images/breakfast1.jpg" alt="Random breakfast1">
+                <img src="../darbas/images/breakfast1.jpg" alt="chia pudding">
                 <div class="instructions">
-                    <h3>Breakfast No1</h3>
+                    <h3>Chia Pudding</h3><br>
                     <ul>
-                        <li>Ingredient 1</li>
-                        <li>Ingredient 2</li>
-                        <li>Ingredient 3</li>
-                        <li>Ingredient 4</li>
-                        <li>Ingredient 5</li>
-                    </ul>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit laborum, eligendi ad aperiam, impedit deleniti adipisci libero nam doloremque a, officiis consequatur ut. Quia incidunt possimus illo? Vitae eveniet enim obcaecati dolorum praesentium asperiores dolorem at et. Veritatis aliquam consequatur dolorum aperiam perferendis dolorem eaque porro, vero voluptatum eum consectetur.</p>
+                        <li>1 cup plant-based milk</li>
+                        <li>3 tablespoons chia seeds</li>
+                        <li>1 tablespoon maple syrup</li>
+                        <li>1/2 teaspoon vanilla extract</li>
+                        <li>Fresh berries for topping</li>
+                    </ul><br>
+                    <p>In a jar or bowl, combine the plant-based milk, chia seeds, maple syrup, and vanilla extract. Stir well and refrigerate for at least 4 hours or overnight. Once the mixture thickens to a pudding-like consistency, serve chilled, topped with fresh berries. Enjoy!</p>
                 </div>
             </div>
             <div class="breakfast2 flex-container">
-                <img src="../darbas/images/breakfast2.jpg" alt="Random breakfast2">
+                <img src="../darbas/images/breakfast2.jpg" alt="oatmeal">
                 <div>
-                    <h3>Breakfast No2</h3>
+                    <h3>Oatmeal</h3><br>
                     <ul>
-                        <li>Ingredient 1</li>
-                        <li>Ingredient 2</li>
-                        <li>Ingredient 3</li>
-                        <li>Ingredient 4</li>
-                        <li>Ingredient 5</li>
-                    </ul>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit laborum, eligendi ad aperiam, impedit deleniti adipisci libero nam doloremque a, officiis consequatur ut. Quia incidunt possimus illo? Vitae eveniet enim obcaecati dolorum praesentium asperiores dolorem at et. Veritatis aliquam consequatur dolorum aperiam perferendis dolorem eaque porro, vero voluptatum eum consectetur.</p>
+                        <li>1/2 cup rolled oats</li>
+                        <li>1 cup plant-based milk</li>
+                        <li>1/2 cup blueberries</li>
+                        <li>1 ripe banana, sliced</li>
+                        <li>Handful of chopped walnuts</li>
+                    </ul><br>
+                    <p>In a saucepan, bring the oats and plant-based milk to a simmer. Cook for about 5 minutes, stirring occasionally. Transfer to a bowl and top with blueberries, sliced banana, and chopped walnuts. Enjoy your delicious and nutritious plant-based breakfast!</p>
                 </div>
             </div>            
         </div> 
@@ -123,31 +123,39 @@
         <div class="container">
             <h2 id="lunch-recipes">Lunch Recipes</h2>
             <div class="lunch1 flex-container">
-                <img src="../darbas/images/lunch1.jpg" alt="Random lunch1">
+                <img src="../darbas/images/lunch1.jpg" alt="zucchini stew">
                 <div class="instructions">
-                    <h3>Lunch No1</h3>
+                    <h3>Stew with Zucchini, Broccoli, and Carrots</h3><br>
                     <ul>
-                        <li>Ingredient 1</li>
-                        <li>Ingredient 2</li>
-                        <li>Ingredient 3</li>
-                        <li>Ingredient 4</li>
-                        <li>Ingredient 5</li>
-                    </ul>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit laborum, eligendi ad aperiam, impedit deleniti adipisci libero nam doloremque a, officiis consequatur ut. Quia incidunt possimus illo? Vitae eveniet enim obcaecati dolorum praesentium asperiores dolorem at et. Veritatis aliquam consequatur dolorum aperiam perferendis dolorem eaque porro, vero voluptatum eum consectetur.</p>
+                        <li>1 zucchini, diced</li>
+                        <li>1 head of broccoli, florets separated</li>
+                        <li>2 carrots, sliced</li>
+                        <li>1 onion, diced</li>
+                        <li>2 garlic cloves, minced</li>
+                        <li>1 can diced tomatoes</li>
+                        <li>4 cups vegetable broth</li>
+                        <li>1 teaspoon dried thyme</li>
+                        <li>Salt and pepper to taste</li>
+                        <li>Fresh parsley for garnish</li>
+                    </ul><br>
+                    <p>In a large pot, sauté the onion and garlic until fragrant. Add the zucchini, broccoli, and carrots, and cook for a few minutes. Stir in the diced tomatoes, vegetable broth, dried thyme, salt, and pepper. Simmer for 20-25 minutes until the vegetables are tender. Serve hot, garnished with fresh parsley. Enjoy the comforting flavors of this plant-based stew!</p>
                 </div>
             </div>
             <div class="lunch2 flex-container">
-                <img src="../darbas/images/lunch2.jpg" alt="Random lunch2">
+                <img src="../darbas/images/lunch2.jpg" alt="chickpea stew">
                 <div>
-                    <h3>Lunch No2</h3>
+                    <h3>Chickpea, Broccoli, and Tomato Stew</h3><br>
                     <ul>
-                        <li>Ingredient 1</li>
-                        <li>Ingredient 2</li>
-                        <li>Ingredient 3</li>
-                        <li>Ingredient 4</li>
-                        <li>Ingredient 5</li>
-                    </ul>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit laborum, eligendi ad aperiam, impedit deleniti adipisci libero nam doloremque a, officiis consequatur ut. Quia incidunt possimus illo? Vitae eveniet enim obcaecati dolorum praesentium asperiores dolorem at et. Veritatis aliquam consequatur dolorum aperiam perferendis dolorem eaque porro, vero voluptatum eum consectetur.</p>
+                        <li>1 can chickpeas, drained and rinsed</li>
+                        <li>1 head of broccoli, florets separated</li>
+                        <li>2 tomatoes, diced</li>
+                        <li>1 onion, diced</li>
+                        <li>2 garlic cloves, minced</li>
+                        <li>4 cups vegetable broth</li>
+                        <li>1 teaspoon cumin</li>
+                        <li>Salt and pepper to taste</li>
+                    </ul><br>
+                    <p>In a large pot, sauté the onion and garlic until translucent. Add the chickpeas, broccoli, tomatoes, vegetable broth, cumin, salt, and pepper. Bring to a boil, then reduce heat and simmer for 15-20 minutes until the broccoli is tender. Serve hot and enjoy this nourishing plant-based stew!</p>
                 </div>
             </div>            
         </div> 
@@ -156,31 +164,37 @@
         <div class="container">
             <h2 id="dinner-recipes">Dinner Recipes</h2>
             <div class="dinner1 flex-container">
-                <img src="../darbas/images/dinner1.jpg" alt="Random dinner1">
+                <img src="../darbas/images/dinner1.jpg" alt="chickpea and veggie bowl">
                 <div class="instructions">
-                    <h3>Dinner No1</h3>
+                    <h3>Chickpea and Veggie Bowl</h3><br>
                     <ul>
-                        <li>Ingredient 1</li>
-                        <li>Ingredient 2</li>
-                        <li>Ingredient 3</li>
-                        <li>Ingredient 4</li>
-                        <li>Ingredient 5</li>
-                    </ul>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit laborum, eligendi ad aperiam, impedit deleniti adipisci libero nam doloremque a, officiis consequatur ut. Quia incidunt possimus illo? Vitae eveniet enim obcaecati dolorum praesentium asperiores dolorem at et. Veritatis aliquam consequatur dolorum aperiam perferendis dolorem eaque porro, vero voluptatum eum consectetur.</p>
+                        <li>1 cup cooked chickpeas</li>
+                        <li>1 ripe avocado, sliced</li>
+                        <li>Mixed salad greens</li>
+                        <li>1 medium sweet potato, roasted and cubed</li>
+                        <li>Fresh sprouts</li>
+                        <li>Cherry tomatoes, halved</li>
+                        <li>Dressing of your choice</li>
+                    </ul><br>
+                    <p>In a bowl, layer mixed salad greens, cooked chickpeas, roasted sweet potato cubes, sliced avocado, fresh sprouts, and cherry tomatoes. Drizzle your preferred dressing over the bowl. Toss gently to combine all the flavors. Enjoy this nourishing and satisfying dinner bowl.</p>
                 </div>
             </div>
             <div class="dinner2 flex-container">
-                <img src="../darbas/images/dinner2.jpg" alt="Random dinner2">
+                <img src="../darbas/images/dinner2.jpg" alt="stuffed eggplant">
                 <div>
-                    <h3>Dinner No2</h3>
+                    <h3>Stuffed Eggplant</h3><br>
                     <ul>
-                        <li>Ingredient 1</li>
-                        <li>Ingredient 2</li>
-                        <li>Ingredient 3</li>
-                        <li>Ingredient 4</li>
-                        <li>Ingredient 5</li>
-                    </ul>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit laborum, eligendi ad aperiam, impedit deleniti adipisci libero nam doloremque a, officiis consequatur ut. Quia incidunt possimus illo? Vitae eveniet enim obcaecati dolorum praesentium asperiores dolorem at et. Veritatis aliquam consequatur dolorum aperiam perferendis dolorem eaque porro, vero voluptatum eum consectetur.</p>
+                        <li>2 medium-sized eggplants</li>
+                        <li>1 cup cooked quinoa</li>
+                        <li>1 cup diced tomatoes</li>
+                        <li>1/2 cup diced bell peppers</li>
+                        <li>1/2 cup diced zucchini</li>
+                        <li>1/4 cup chopped fresh parsley</li>
+                        <li>2 cloves garlic, minced</li>
+                        <li>2 tablespoons olive oil</li>
+                        <li>Salt and pepper to taste</li>
+                    </ul><br>
+                    <p>Preheat the oven to 200°C. Cut the eggplants in half and scoop out the flesh, leaving about 1/2-inch thick shells. Chop the scooped-out eggplant flesh. In a skillet, heat olive oil, sauté the eggplant flesh, diced tomatoes, bell peppers, zucchini, garlic, salt, and pepper until tender. Stir in the cooked quinoa and chopped parsley. Stuff the eggplant shells with the mixture and place them in a baking dish. Bake for 25-30 minutes until the eggplants are tender. You can serve this dish with a side of fresh tomatoes for a vibrant dinner experience.</p>
                 </div>
             </div>            
         </div> 

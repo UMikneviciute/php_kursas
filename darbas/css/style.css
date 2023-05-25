@@ -29,7 +29,6 @@ ul {
     border: solid 1px;
     background-color: #fff;
     width: 100%;
-    /* height: 125px; */
     display: block;
     padding: 0 60px;
 }
@@ -105,20 +104,13 @@ padding: 0;
 .hero {
     border: solid 1px magenta;
     width: 100%;
-    /* height: 100vh; */
     background: linear-gradient(
     to right,
     #EBF3F5 0%,
     #EBF3F5 50%,
     rgb(56, 70, 73) 50%,
     rgb(56, 70, 73) 100%
-
-    /* position: absolute;
-    width: 900px;
-    height: 925px;
-    left: 1020px;
-    top: 125px; */
-  );
+    );
 }
 
 .hero .left {
@@ -139,14 +131,13 @@ padding: 0;
 .right  {
     border: solid 10px #EBF3F5;
     margin: 135px 611px 136px 100px;
-
 }
 
 .left p:first-of-type {
     font-size: 0.9375rem;
     font-weight: 600;
     line-height: 154%;
-    letter-spacing: 10%;
+    letter-spacing: 0.1em;
     text-transform: uppercase;
     color: #5c8692;
 }
@@ -154,7 +145,6 @@ padding: 0;
 .left i {
     color: #5c8692;
     margin-right: 9px;
-
 }
 
 .left h1 {
