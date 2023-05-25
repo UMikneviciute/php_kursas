@@ -1,0 +1,562 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Manrope', sans-serif;
+    /* font-family: 'Playfair Display', serif; */
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    background-color: #EBF3F5;
+}
+
+/*HEADER*/
+
+ul {
+    padding: 0;
+}
+
+.site-header {
+    border: solid 1px;
+    background-color: #fff;
+    width: 100%;
+    /* height: 125px; */
+    display: block;
+    padding: 0 60px;
+}
+
+.container {
+    border: solid 1px red;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    /* padding: 0 20px; */
+}
+
+.flex-container {
+    /* border: solid 1px yellow; */
+    display: flex;
+}
+
+.site-header.flex-container {
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    padding: 28px 60px;
+}
+
+.main-nav {
+    margin-right: 10px;
+}
+
+.main-nav li, .social-nav li {
+    list-style: none;
+    border: solid 2px green;
+}
+
+.main-nav ul, .social-nav ul {
+padding: 0;
+}
+
+.main-nav a {
+    color: #555555;
+    text-decoration: none;
+    font-size: 1.125rem;
+    margin: 0 5px;
+    padding: 10px 17px;   
+}
+
+.main-nav a:hover {
+    background-color: #F0FFFF;
+    border-radius: 10px;
+}
+
+.social-nav a {
+    color: #141414;
+    text-decoration: none; 
+    font-size: 1rem;
+    margin: 0 5px;
+    padding: 10px 17px; 
+}
+
+/*HERO*/
+
+.hero {
+    border: solid 1px magenta;
+    width: 100%;
+    /* height: 100vh; */
+    background: linear-gradient(
+    to right,
+    #EBF3F5 0%,
+    #EBF3F5 50%,
+    rgb(56, 70, 73) 50%,
+    rgb(56, 70, 73) 100%
+
+    /* position: absolute;
+    width: 900px;
+    height: 925px;
+    left: 1020px;
+    top: 125px; */
+  );
+}
+
+.hero .left {
+    margin: 235px 0;
+    max-width: 510px;
+    border: solid 2px;
+}
+
+.right img {
+    border: solid 1px white;
+    width: 550px;
+    height: 545px;
+    left: 942px;
+    top: 315px;
+    padding: 59px 68px 59px 57px;
+}
+
+.right  {
+    border: solid 10px #EBF3F5;
+    margin: 135px 611px 136px 100px;
+
+
+ /* width: 561px;
+    height: 663px;
+    top: 256px;
+    left: 999px;
+    position: absolute; */
+}
+
+.left h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 4.375rem;
+    color: #141414;
+    letter-spacing: -0.01em;
+    line-height: 115%;
+    font-weight: 700;
+}
+
+.left p {
+    font-size: 1.1875rem;
+    font-weight: 400;
+    line-height: 170%;
+    color: #555555;
+}
+
+.left button {
+    font-size: 0.875rem;
+    width: 250px;
+    height: 65px;
+    background-color: #5c8692;
+    color: #fff;
+    text-transform: uppercase;
+    line-height: 125%;
+    font-weight: 800;
+    border: none;
+    letter-spacing: 0.12em;
+    border-radius: 3px;
+}
+
+/* RECEPTAI BENDRI */
+
+.content1 {
+    background-color: #fff;
+}
+
+h3#recipes {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.8125rem;
+    font-weight: 700;
+    color: #141414;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.recipes ul {
+    justify-content: space-between;
+}
+
+.recipes ul li {
+    list-style: none;
+}
+
+.recipes ul li h3 {
+    font-family: 'Playfair Display', serif;
+    color: #141414;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.625rem;
+    line-height: 120%;
+}
+
+.recipes ul li p {
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 165%;
+    letter-spacing: 0.02em;
+    color: #555555;
+}
+
+/* PUSRYČIAI */
+
+.content2 {
+    background-color: #EBF3F5;
+}
+
+.content2 h2, /*receptų skilčių pavadinimai*/
+.content3 h2,
+.content4 h2 {
+    font-family: 'Playfair Display', serif;
+    font-style: bold;
+    font-weight: 700;
+    font-size: 2.8125rem;
+    line-height: 130%;
+    text-align: center;
+    color: #141414;
+}
+.breakfast1, /*visų receptų ir ingredientų šriftai*/
+.breakfast2,
+.lunch1,
+.lunch2,
+.dinner1,
+.dinner2 {
+    font-size: 1.125rem;
+    line-height: 165%;
+    color: #555555;
+}
+
+.content2 h3, /*receptų pavadinimai*/
+.content3 h3,
+.content4 h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.375rem;
+    color: #141414;
+    line-height: 130%;
+}
+
+.breakfast2,
+.lunch2,
+.dinner2 {
+    flex-direction: row-reverse;
+}
+
+.instructions {
+    padding-left: 25px;
+}
+
+.content2 ul,
+.content3 ul,
+.content4 ul {
+    padding-left: 40px;
+}
+
+/*PIETŪS*/
+
+.content3 {
+    background-color: #fff;
+}
+
+/*TESTIMONIALS*/
+
+.testimonials {
+    background-color: #fff;
+}
+
+.testimonials-heading {
+    text-align: center;
+}
+
+.testimonials-heading p {
+    font-size: 0.9375rem;
+    font-weight: 600;
+    color: #5c8692;
+    line-height: 154%;
+    letter-spacing: 10%;
+    text-transform: uppercase;
+    margin-top: 147px;
+    margin-bottom: 2px;
+}
+
+.testimonials-heading h2 {
+    font-family:'Playfair Display', serif;
+    font-size: 2.8125rem;
+    font-weight: 700;
+    line-height: 130%;
+    letter-spacing: -1%;
+    margin-top: 2px;
+}
+
+.testimonials-content {
+    margin-bottom: 147px;
+}
+
+.testimonials-content .testimonials-content-box:first-of-type {
+    margin-right: 36px;
+} 
+
+.testimonials-content-box .top {
+    background-color: #EBF3F5;
+}
+
+.top p {
+    font-size: 1.1875rem;
+    font-weight: 400;
+    line-height: 180%;
+    margin: 0;
+    padding: 44px 48px 54px 49px;
+}
+
+.testimonials-content-box .bottom {
+    background-color: #1e2c30;
+    color: #fff;
+}
+.bottom.flex-container {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bottom div img {
+    max-height: 74px;
+    max-width: 74px;
+    margin: 26px 20px 25px 51px;
+}
+
+.reader-info {
+    margin-top: 26px;
+}
+
+.reader-info i {
+    font-size: 1rem;
+}
+
+.reader-info p:first-of-type {
+    font-family:'Playfair Display', serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 160%;
+    letter-spacing: -1%;
+    margin: 0;
+}
+
+.reader-info p:last-of-type {
+    font-size: 0.875rem;
+    font-weight: 600;
+    line-height: 160%;
+    letter-spacing: 3%;
+    margin: 0;
+}
+
+.bottom.flex-container img {
+    margin-right: 51px;
+}
+
+/*KONTAKTINĖ FORMA*/
+.contact {
+    background-color: #EBF3F5;
+}
+
+.section-heading {
+    align-self: center;
+}
+
+.contact h2 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 2.8125rem;
+    line-height: 130%;
+    letter-spacing: -1%;
+    color: #141414;
+}
+
+.contact p {
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 175%;
+    color: #555555;
+}
+
+.contact-form {
+    background-color: #fff;
+    padding: 66px 75px;
+    margin: 132px 0;
+}
+
+.contact-form input {
+    background-color: #fff;
+    width: 400px;
+    height: 65px;
+    border: 1px solid #5c8692;
+    margin-bottom: 15px;
+}
+
+textarea {
+    background-color: #fff;
+    width: 400px;
+    height: 136px;
+    border: 1px solid #5c8692;
+}
+
+.contact-form button {
+    background-color: #5c8692;
+    width: 400px;
+    height: 65px;
+    color: #fff;
+    font-size: 0.875rem;
+    font-weight: 800;
+    line-height: 125%;
+    text-align: center;
+    vertical-align: center;
+    letter-spacing: 12%;
+    text-transform: uppercase;
+    margin-top: 15px;
+}
+
+.contact .flex-container {
+    justify-content: space-between;
+}
+/*BLOG*/
+.blog {
+    background-color: #fff;
+}
+
+.blog .section-heading {
+    text-align: center;
+}
+
+.blog .section-heading p{
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 0.9375rem;
+    line-height: 154%;
+    letter-spacing: 10%;
+    color: #5c8692;
+}
+
+.blog .section-heading h2 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 2.8125rem;
+    line-height: 130%;
+    letter-spacing: -1%;
+    color: #141414;
+}
+
+.blog .flex-container {
+    justify-content: space-between;
+}
+
+.blog-content-item {
+    background-color: #EBF3F5;
+    /*trūksta tarpų tarp elementų */
+}
+
+.blog-content-item h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.375rem;
+    font-weight: 700;
+    line-height: 140%;
+    letter-spacing: 2%;
+    color: #141414;
+}
+
+.blog-content-item p{
+    font-size: 1.125rem;
+    line-height: 155%;
+    letter-spacing: 2%;
+    color: #555555;
+}
+
+.blog button {
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 0.875rem;
+    line-height: 125%;
+    letter-spacing: 12%;
+    color: #141414;
+    padding: 23px 41px;
+    border: solid 2px #5c8692;
+    background-color: #fff;
+    margin: 60px 475px 150px;
+}
+
+/*FOOTER*/
+
+.footer {
+    background-color: #1e2c30;
+    color: #fff;
+}
+
+.footer .footer-social.flex-container {
+     justify-content: space-between;
+     align-items: center;
+     border-bottom: solid 2px rgb(64, 75, 79, 1);
+     padding-bottom: 52px;
+     margin-top: 66px;
+}
+
+.footer .logo h2 {
+    margin: 4px auto 11px 17px;
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 125%;
+    letter-spacing: 2%;
+}
+
+.footer h3 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 1.375rem;
+    line-height: 140%;
+}
+
+.footer .social-nav ul li a {
+    color: #fff;
+    padding: 16px 22px 17px 21px;
+    border: 2px solid #5c8692;
+    font-size: 1.125rem;
+    line-height: 120%;
+    letter-spacing: 5.5%;
+    font-weight: 400;
+    margin-left: 10px;
+}
+
+.footer-main {
+    justify-content: space-between;
+}
+
+.footer-main ul {
+    list-style: none;
+}
+
+.footer-main ul li {
+    line-height: 200%;
+    font-size: 1.0625rem;
+    font-weight: 500;
+    letter-spacing: -1%;
+}
+
+.footer-main a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer {
+    background-color: #111e22;
+    color: #fff;
+}
+
+footer p {
+    margin: 0;
+    font-weight: 400;
+    font-size: 0.9375rem;
+    line-height: 36px;
+    letter-spacing: -1%;
+    text-align: center;
+    padding: 20px 0;
+}
