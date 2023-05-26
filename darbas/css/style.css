@@ -270,6 +270,10 @@ h3#recipes {
     padding-left: 40px;
 }
 
+/* .container img { /*receptų foto gal reikia uždėti visom?*/ 
+    /* max-height: 640px;
+}  */
+
 /*PIETŪS*/
 
 .content3 {
@@ -313,6 +317,10 @@ h3#recipes {
 .testimonials-content .testimonials-content-box:first-of-type {
     margin-right: 36px;
 } 
+
+.testimonials-content-box {
+    max-width: calc(50% - 18px);
+}
 
 .testimonials-content-box .top {
     background-color: #EBF3F5;
@@ -375,8 +383,13 @@ h3#recipes {
     background-color: #EBF3F5;
 }
 
+.contact .flex-container {
+    justify-content: space-between;
+}
+
 .section-heading {
     align-self: center;
+    margin-right: 100px;
 }
 
 .contact h2 {
@@ -401,19 +414,41 @@ h3#recipes {
     margin: 132px 0;
 }
 
-.contact-form input {
-    background-color: #fff;
-    width: 400px;
-    height: 65px;
+.contact-form .input-icons {
     border: 1px solid #5c8692;
     margin-bottom: 15px;
+    color: #5c8692;
+}
+
+.contact-form input {
+    background-color: #fff;
+    width: auto;
+    height: 65px;
+    /* border: 1px solid #5c8692; */
+    border: none;
+}
+
+.contact-form i {
+    max-width: 24px;
+    max-height: 24px;
+    padding-left: 15px;
+}
+
+.input::placeholder {
+    color: #555555;
+}
+
+input:focus {
+  outline: none;
 }
 
 textarea {
     background-color: #fff;
     width: 400px;
     height: 136px;
-    border: 1px solid #5c8692;
+    /* border: 1px solid #5c8692; */
+    border: none;
+    padding: 18px;
 }
 
 .contact-form button {
@@ -434,7 +469,9 @@ textarea {
 .contact .flex-container {
     justify-content: space-between;
 }
+
 /*BLOG*/
+
 .blog {
     background-color: #fff;
 }

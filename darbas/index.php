@@ -136,9 +136,8 @@
                         <li>4 cups vegetable broth</li>
                         <li>1 teaspoon dried thyme</li>
                         <li>Salt and pepper to taste</li>
-                        <li>Fresh parsley for garnish</li>
                     </ul><br>
-                    <p>In a large pot, sauté the onion and garlic until fragrant. Add the zucchini, broccoli, and carrots, and cook for a few minutes. Stir in the diced tomatoes, vegetable broth, dried thyme, salt, and pepper. Simmer for 20-25 minutes until the vegetables are tender. Serve hot, garnished with fresh parsley. Enjoy the comforting flavors of this plant-based stew!</p>
+                    <p>In a large pot, sauté the onion and garlic until fragrant. Add the zucchini, broccoli, and carrots, and cook for a few minutes. Stir in the diced tomatoes, vegetable broth, dried thyme, salt, and pepper. Simmer for 20-25 minutes until the vegetables are tender. Serve hot and enjoy the comforting flavors of this plant-based stew!</p>
                 </div>
             </div>
             <div class="lunch2 flex-container">
@@ -155,7 +154,7 @@
                         <li>1 teaspoon cumin</li>
                         <li>Salt and pepper to taste</li>
                     </ul><br>
-                    <p>In a large pot, sauté the onion and garlic until translucent. Add the chickpeas, broccoli, tomatoes, vegetable broth, cumin, salt, and pepper. Bring to a boil, then reduce heat and simmer for 15-20 minutes until the broccoli is tender. Serve hot and enjoy this nourishing plant-based stew!</p>
+                    <p>In a large pot, sauté the onion and garlic until translucent. Add the chickpeas, broccoli, tomatoes, vegetable broth, cumin, salt, and pepper. Bring to a boil, then reduce heat and simmer for 15-20 minutes until the broccoli is tender. Serve hot and enjoy this nourishing plant-based stew, packed with wholesome ingredients that will satisfy your taste buds and nourish your body.</p>
                 </div>
             </div>            
         </div> 
@@ -189,12 +188,11 @@
                         <li>1 cup diced tomatoes</li>
                         <li>1/2 cup diced bell peppers</li>
                         <li>1/2 cup diced zucchini</li>
-                        <li>1/4 cup chopped fresh parsley</li>
                         <li>2 cloves garlic, minced</li>
-                        <li>2 tablespoons olive oil</li>
+                        <li>Fresh parsley, chopped</li>
                         <li>Salt and pepper to taste</li>
                     </ul><br>
-                    <p>Preheat the oven to 200°C. Cut the eggplants in half and scoop out the flesh, leaving about 1/2-inch thick shells. Chop the scooped-out eggplant flesh. In a skillet, heat olive oil, sauté the eggplant flesh, diced tomatoes, bell peppers, zucchini, garlic, salt, and pepper until tender. Stir in the cooked quinoa and chopped parsley. Stuff the eggplant shells with the mixture and place them in a baking dish. Bake for 25-30 minutes until the eggplants are tender. You can serve this dish with a side of fresh tomatoes for a vibrant dinner experience.</p>
+                    <p>Preheat oven to 400°F (200°C). Cut eggplants in half, scoop out flesh. Sauté diced tomatoes, bell peppers, zucchini, and garlic. Mix in cooked quinoa, parsley, salt, and pepper. Stuff mixture into eggplant halves. Bake for 25-30 minutes. You can serve this dish with a side of fresh tomatoes for a vibrant dinner experience. Enjoy!</p>
                 </div>
             </div>            
         </div> 
@@ -208,7 +206,7 @@
             <div class="testimonials-content flex-container">
                 <div class="testimonials-content-box">
                     <div class="top">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam unde esse, eos perferendis illum maxime enim ipsam totam quis aut. Saepe voluptate eaque dicta exercitationem laudantium ipsa velit ad mollitia.</p>
+                        <p>The variety and creativity of the recipes blew me away. I've discovered a whole new world of flavors. Not only are these recipes incredibly tasty, but they've also improved my overall well-being. I feel energized, and more connected to nature. Thank you for introducing me to the wonders of plant-based cooking!</p>
                     </div>
                     <div class="bottom flex-container">
                         <div class="flex-container">
@@ -228,7 +226,7 @@
                 </div>
                 <div class="testimonials-content-box">
                     <div class="top">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam unde esse, eos perferendis illum maxime enim ipsam totam quis aut. Saepe voluptate eaque dicta exercitationem laudantium ipsa velit ad mollitia.</p>
+                        <p>I struggled to find the time and inspiration to cook meals. That's until I discovered this plant-based recipes website. It has revolutionized my approach to cooking. The recipes are not only easy to follow but also incredibly flavorful. This website has become my go-to resource for quick and nourishing recipes.</p>
                     </div>
                     <div class="bottom flex-container">
                         <div class="flex-container">
@@ -255,14 +253,26 @@
                 <h2>Get in touch with us!</h2>
                 <p>Share your ideas or any feedback. We are looking forward to hear from you!</p>
             </div>
-                <form id="contact-form" class="contact-form" action="index.php" method="post">
+            <form id="contact-form" class="contact-form" action="index.php" method="post">
+                <div class="input-icons">
+                    <i class="bi bi-person"></i>
                     <input required type="text" name="name" placeholder="Name"><br>
+                </div>
+                <div class="input-icons">
+                    <i class="bi bi-envelope"></i>
                     <input required type="email" name="email" placeholder="Email"><br>
+                </div>
+                <div class="input-icons">
+                    <i class="bi bi-telephone"></i>
                     <input required type="tel" name="phone" placeholder="Phone"><br>
+                </div>
+                <div class="input-icons flex-container">
+                    <i class="bi bi-pencil-square"></i>
                     <textarea name="message" placeholder="Any note for us?" rows="8"></textarea><br>
-                    <button name="submit" type="submit" class="btn btn-form">Submit</button>
-                </form>
-            </div>
+                </div>
+                <button name="submit" type="submit" class="btn btn-form">Submit</button>
+            </form>
+        </div>
     </section>
     <section class="blog">
         <div class="container">
@@ -276,8 +286,8 @@
                         <img src="../darbas/images/spices.jpg" alt="spices">
                     </div>
                     <div class="blog-text">
-                        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore aliquam beatae et recusandae voluptatum iusto, deserunt cumque!</p>
+                        <h3>Spice Up Your Plant-Based Culinary Journey!</h3>
+                        <p>Discover the aromatic world of spices and elevate your plant-based dishes with enticing flavors and vibrant culinary experiences.</p>
                     </div>
                 </div>
                 <div class="blog-content-item">
@@ -285,8 +295,8 @@
                         <img src="../darbas/images/mindfulness.jpg" alt="mindfulness">
                     </div>
                     <div class="blog-text">
-                        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore aliquam beatae et recusandae voluptatum iusto, deserunt cumque!</p>
+                        <h3>Embrace Mindfulness in Your Lifestyle</h3>
+                        <p>Uncover the power of mindfulness and find balance, joy, and connection through mindful practices that enhance your plant-based journey.</p>
                     </div>
                 </div>
                 <div class="blog-content-item">
@@ -294,8 +304,8 @@
                         <img src="../darbas/images/protein.jpg" alt="protein">
                     </div>
                     <div class="blog-text">
-                        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore aliquam beatae et recusandae voluptatum iusto, deserunt cumque!</p>
+                        <h3>Unleash the Power of Wholesome Plant Proteins</h3>
+                        <p>Unlock the potential of lentils, beans, chickpeas, and more as we delve into the world of plant-based proteins, offering nourishment and delicious possibilities.</p>
                     </div>
                 </div>
             </div>
