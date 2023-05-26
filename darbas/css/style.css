@@ -426,6 +426,7 @@ h3#recipes {
     height: 65px;
     /* border: 1px solid #5c8692; */
     border: none;
+    margin-left: 15px;
 }
 
 .contact-form i {
@@ -442,13 +443,20 @@ input:focus {
   outline: none;
 }
 
+.input-icons i {
+    padding-top: 18px;
+}
+
+textarea:focus {
+    outline: none;
+  }
+
 textarea {
     background-color: #fff;
     width: 400px;
     height: 136px;
-    /* border: 1px solid #5c8692; */
     border: none;
-    padding: 18px;
+    margin: 18px 22px;
 }
 
 .contact-form button {
@@ -464,6 +472,7 @@ textarea {
     letter-spacing: 12%;
     text-transform: uppercase;
     margin-top: 15px;
+    border: none;
 }
 
 .contact .flex-container {
@@ -478,6 +487,8 @@ textarea {
 
 .blog .section-heading {
     text-align: center;
+    margin-top: 145px;
+    max-width: auto;
 }
 
 .blog .section-heading p{
@@ -487,6 +498,7 @@ textarea {
     line-height: 154%;
     letter-spacing: 10%;
     color: #5c8692;
+    margin-bottom: 0;
 }
 
 .blog .section-heading h2 {
@@ -496,6 +508,7 @@ textarea {
     line-height: 130%;
     letter-spacing: -1%;
     color: #141414;
+    margin-top: 4px;
 }
 
 .blog .flex-container {
