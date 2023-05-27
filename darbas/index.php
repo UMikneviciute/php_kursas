@@ -67,27 +67,44 @@
             </div> 
         </div>
     </section>
-    
     <div class="content1">
         <div class="container">
             <h3 id="recipes">Recipes</h3>
             <nav class="recipes">
-                <ul class="flex-container">
-                    <li><a href="#breakfast-recipes"><img src="../darbas/images/breakfast.jpg" alt="breakfast"></a> <!--nuotrauka turi nuvesti į turinio vietą-->
+                <div class="flex-container">
+                    <div><a href="#breakfast-recipes"><img src="../darbas/images/breakfast.jpg" alt="breakfast"></a> <!--nuotrauka turi nuvesti į turinio vietą-->
                         <h3>Breakfast</h3>
-                        <p>Start your day with vibrant energy and nourishment. Explore our mouthwatering whole food plant-based breakfast recipes!</p></li>
-                    <li><a href="#lunch-recipes"><img src="../darbas/images/lunch.jpg" alt="lunch"></a> <!--nuotrauka turi nuvesti į turinio vietą-->
+                        <p>Start your day with vibrant energy and nourishment. Explore our mouthwatering whole food plant-based breakfast recipes!</p>
+                        <button><a href="#breakfast-recipes">Read more</button>
+                    </div>
+                    <div><a href="#lunch-recipes"><img src="../darbas/images/lunch.jpg" alt="lunch"></a> <!--nuotrauka turi nuvesti į turinio vietą-->
                         <h3>Lunch</h3>
-                        <p>Revitalize your midday with wholesome goodness. Dive into our captivating whole food plant-based lunch recipes.</p></li>
-                    <li><a href="#dinner-recipes"><img src="../darbas/images/dinner.jpg" alt="dinner"></a> <!--nuotrauka turi nuvesti į turinio vietą-->
+                        <p>Revitalize your midday with wholesome goodness. Dive into our captivating whole food plant-based lunch recipes.</p>
+                        <button><a href="#lunch-recipes">Read more</button>
+                    </div>
+                    <div><a href="#dinner-recipes"><img src="../darbas/images/dinner.jpg" alt="dinner"></a> <!--nuotrauka turi nuvesti į turinio vietą-->
                         <h3>Dinner</h3>
-                        <p>Elevate your evenings with flavorful delights. Discover our enticing whole food plant-based dinner recipes.</p></li>
-                </ul>
+                        <p>Elevate your evenings with flavorful delights. Discover our enticing whole food plant-based dinner recipes and embark on a culinary journey.</p>
+                        <button>Read more</button>
+                    </div>
+                </div>
             </nav>
         </div> 
     </div>
+    <section id="about-us" class="about-us">
+        <div class="container flex-container">
+            <div class="about-heading">
+                <p>About us</p>
+                <h2>Indulge in wholesome flavors that nourish your body and soul</h2>
+                <div class="about-content">
+                    <p>Welcome to our plant-based paradise, where vibrant flavors meet compassionate living. We are passionate about promoting a sustainable and cruelty-free lifestyle through our delicious recipes. Join us on this culinary adventure as we redefine the art of plant-based cooking and inspire mindful eating choices for a better world.</p>
+                </div>
+            </div>
+            <img src="./images/about.jpg" alt="very nice vegetables">
+    </section>
     <div class="content2">
         <div class="container">
+            <p>Our recipes</p>
             <h2 id="breakfast-recipes">Breakfast Recipes</h2>
             <div class="breakfast1 flex-container">
                 <img src="../darbas/images/breakfast1.jpg" alt="chia pudding">
@@ -121,6 +138,7 @@
     </div>
     <div class="content3">
         <div class="container">
+            <p>Our recipes</p>
             <h2 id="lunch-recipes">Lunch Recipes</h2>
             <div class="lunch1 flex-container">
                 <img src="../darbas/images/lunch1.jpg" alt="zucchini stew">
@@ -161,6 +179,7 @@
     </div>
     <div class="content4">
         <div class="container">
+            <p>Our recipes</p>
             <h2 id="dinner-recipes">Dinner Recipes</h2>
             <div class="dinner1 flex-container">
                 <img src="../darbas/images/dinner1.jpg" alt="chickpea and veggie bowl">
@@ -370,7 +389,7 @@
         </div>
     </section>
     <footer>
-        <p>&copy; Copyright 2023. Drafted by Uršulė Miknevičiūtė</p>
+        <p>&copy;Copyright <?php echo date("Y"); ?>. Drafted by Uršulė Miknevičiūtė</p>
     </footer>
 </body>
 </html>

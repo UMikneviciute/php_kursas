@@ -192,15 +192,12 @@ h3#recipes {
     padding-top: 50px;
 }
 
-.recipes ul {
+.recipes .flex-container {
     justify-content: space-between;
+    margin-bottom: 150px;
 }
 
-.recipes ul li {
-    list-style: none;
-}
-
-.recipes ul li h3 {
+.recipes .flex-container h3 {
     font-family: 'Playfair Display', serif;
     color: #141414;
     font-style: normal;
@@ -209,7 +206,7 @@ h3#recipes {
     line-height: 120%;
 }
 
-.recipes ul li p {
+.recipes .flex-container p {
     font-weight: 400;
     font-size: 1.125rem;
     line-height: 165%;
@@ -217,10 +214,84 @@ h3#recipes {
     color: #555555;
 }
 
-/* PUSRYČIAI */
+.recipes .flex-container div {
+    max-width: 330px;
+}
+
+.recipes button {
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 0.875rem;
+    line-height: 125%;
+    letter-spacing: 12%;
+    color: #141414;
+    padding: 23px 41px;
+    border: solid 2px #5c8692;
+    background-color: #fff;
+}
+/* ABOUT US */
+
+.about-heading {
+    padding-right: 125px;
+}
+
+.about-heading > p:first-of-type {
+    font-size: 0.9375rem;
+    font-weight: 600;
+    color: #5c8692;
+    line-height: 154%;
+    letter-spacing: 10%;
+    text-transform: uppercase;
+    margin-bottom: 2px;
+}
+
+.about-heading h2 {
+    font-family:'Playfair Display', serif;
+    font-size: 2.8125rem;
+    font-weight: 700;
+    line-height: 130%;
+    letter-spacing: -1%;
+    margin-top: 2px;
+}
+
+.about-us .container {
+    margin-top: 147px;
+    margin-bottom: 147px;
+}
+
+.about-content p {
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 175%;
+    color: #555555;
+}
+
+.flex-container {
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* BREAKFAST */
 
 .content2 {
-    background-color: #EBF3F5;
+    background-color: #fff;
+}
+
+.content2 .container > p:first-of-type {
+    margin: 146px 0 0;
+    text-align: center;
+    font-size: 0.9375rem;
+    font-weight: 600;
+    color: #5c8692;
+    line-height: 154%;
+    letter-spacing: 10%;
+    text-transform: uppercase;
+}
+
+.content2 .container,
+.content3 .container,
+.content4 .container {
+    padding-bottom: 145px;
 }
 
 .content2 h2, /*receptų skilčių pavadinimai*/
@@ -233,6 +304,7 @@ h3#recipes {
     line-height: 130%;
     text-align: center;
     color: #141414;
+    margin: 9px 0 50px;
 }
 .breakfast1, /*visų receptų ir ingredientų šriftai*/
 .breakfast2,
@@ -274,17 +346,37 @@ h3#recipes {
     /* max-height: 640px;
 }  */
 
-/*PIETŪS*/
+/*LUNCH*/
 
-.content3 {
+.content3 .container > p:first-of-type {
+    margin: 146px 0 0;
+    text-align: center;
+    font-size: 0.9375rem;
+    font-weight: 600;
+    color: #5c8692;
+    line-height: 154%;
+    letter-spacing: 10%;
+    text-transform: uppercase;
+}
+
+/*DINNER*/
+
+.content4 {
     background-color: #fff;
+}
+
+.content4 .container > p:first-of-type {
+    margin: 146px 0 0;
+    text-align: center;
+    font-size: 0.9375rem;
+    font-weight: 600;
+    color: #5c8692;
+    line-height: 154%;
+    letter-spacing: 10%;
+    text-transform: uppercase;
 }
 
 /*TESTIMONIALS*/
-
-.testimonials {
-    background-color: #fff;
-}
 
 .testimonials-heading {
     text-align: center;
@@ -323,7 +415,7 @@ h3#recipes {
 }
 
 .testimonials-content-box .top {
-    background-color: #EBF3F5;
+    background-color: #fff;
 }
 
 .top p {
@@ -378,9 +470,10 @@ h3#recipes {
     margin-right: 51px;
 }
 
-/*KONTAKTINĖ FORMA*/
+/*CONTACT FORM*/
+
 .contact {
-    background-color: #EBF3F5;
+    background-color: #fff;
 }
 
 .contact .flex-container {
@@ -409,7 +502,7 @@ h3#recipes {
 }
 
 .contact-form {
-    background-color: #fff;
+    background-color: #EBF3F5;
     padding: 66px 75px;
     margin: 132px 0;
 }
@@ -421,10 +514,9 @@ h3#recipes {
 }
 
 .contact-form input {
-    background-color: #fff;
+    background-color: #EBF3F5;
     width: auto;
     height: 65px;
-    /* border: 1px solid #5c8692; */
     border: none;
     margin-left: 15px;
 }
@@ -452,7 +544,7 @@ textarea:focus {
   }
 
 textarea {
-    background-color: #fff;
+    background-color: #EBF3F5;
     width: 400px;
     height: 136px;
     border: none;
@@ -480,10 +572,6 @@ textarea {
 }
 
 /*BLOG*/
-
-.blog {
-    background-color: #fff;
-}
 
 .blog .section-heading {
     text-align: center;
@@ -516,10 +604,9 @@ textarea {
 }
 
 .blog-content-item {
-    background-color: #EBF3F5;
+    background-color: #fff;
     border: solid 1px green;
     max-width: 370px;
-    /*trūksta tarpų tarp elementų */
 }
 
 .blog-content-item h3 {
@@ -544,10 +631,10 @@ textarea {
     font-size: 0.875rem;
     line-height: 125%;
     letter-spacing: 12%;
-    color: #141414;
+    color: #fff;
     padding: 23px 41px;
-    border: solid 2px #5c8692;
-    background-color: #fff;
+    border: none;
+    background-color: #5c8692;
     margin: 60px 475px 150px;
 }
 
