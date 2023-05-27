@@ -29,9 +29,16 @@
             <nav class="main-nav">
                 <ul class="flex-container">
                     <li><a href="#home">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#recipes">Recipes</a></li>
-                    <li><a href="#sign-up">Sign Up!</a></li>
+                    <li class="dropdown">
+                        <a href="#recipes" id="dropdown-mother">Recipes</a>
+                        <ul class="dropdown-list">
+                            <li><a href="#breakfast-recipes">Breakfast</a></li>
+                            <li><a href="#lunch-recipes">Lunch</a></li>
+                            <li><a href="#dinner-recipes">Dinner</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#about-us">About Us</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
                     <li><a href="#contact-us">Contact Us!</a></li>
                 </ul>
             </nav>       
@@ -53,7 +60,7 @@
                 </ul>
             </nav> -->
     </header>
-    <section class="hero">
+    <section id="home" class="hero">
         <div class="container flex-container">
             <div class="left">
                 <p><i class="bi bi-patch-exclamation-fill"></i>Vegetable power!!!</p>
@@ -72,20 +79,23 @@
             <h3 id="recipes">Recipes</h3>
             <nav class="recipes">
                 <div class="flex-container">
-                    <div><a href="#breakfast-recipes"><img src="../darbas/images/breakfast.jpg" alt="breakfast"></a> <!--nuotrauka turi nuvesti į turinio vietą-->
+                    <div>
+                        <a href="#breakfast-recipes"><img src="../darbas/images/breakfast.jpg" alt="breakfast"></a> <!--nuotrauka turi nuvesti į turinio vietą-->
                         <h3>Breakfast</h3>
-                        <p>Start your day with vibrant energy and nourishment. Explore our mouthwatering whole food plant-based breakfast recipes!</p>
-                        <button><a href="#breakfast-recipes">Read more</button>
+                        <p>Start your day with vibrant energy and nourishment. Explore our mouthwatering whole food plant-based breakfast recipes!</p><br><br>
+                        <a href="#breakfast-recipes">Read more</a>
                     </div>
-                    <div><a href="#lunch-recipes"><img src="../darbas/images/lunch.jpg" alt="lunch"></a> <!--nuotrauka turi nuvesti į turinio vietą-->
+                    <div>
+                        <a href="#lunch-recipes"><img src="../darbas/images/lunch.jpg" alt="lunch"></a> <!--nuotrauka turi nuvesti į turinio vietą-->
                         <h3>Lunch</h3>
-                        <p>Revitalize your midday with wholesome goodness. Dive into our captivating whole food plant-based lunch recipes.</p>
-                        <button><a href="#lunch-recipes">Read more</button>
+                        <p>Revitalize your midday with wholesome goodness. Dive into our captivating whole food plant-based lunch recipes.</p><br><br>
+                        <a href="#lunch-recipes">Read more</a>
                     </div>
-                    <div><a href="#dinner-recipes"><img src="../darbas/images/dinner.jpg" alt="dinner"></a> <!--nuotrauka turi nuvesti į turinio vietą-->
+                    <div>
+                        <a href="#dinner-recipes"><img src="../darbas/images/dinner.jpg" alt="dinner"></a> <!--nuotrauka turi nuvesti į turinio vietą-->
                         <h3>Dinner</h3>
-                        <p>Elevate your evenings with flavorful delights. Discover our enticing whole food plant-based dinner recipes and embark on a culinary journey.</p>
-                        <button>Read more</button>
+                        <p>Elevate your evenings with flavorful delights. Discover our enticing whole food plant-based dinner recipes and embark on a culinary journey.</p><br><br>
+                        <a href="#dinner-recipes">Read more</a>
                     </div>
                 </div>
             </nav>
@@ -266,33 +276,6 @@
             </div>
         </div>
     </section>
-    <section class="contact">
-        <div class="container flex-container">
-            <div class="section-heading">
-                <h2>Get in touch with us!</h2>
-                <p>Share your ideas or any feedback. We are looking forward to hear from you!</p>
-            </div>
-            <form id="contact-form" class="contact-form" action="index.php" method="post">
-                <div class="input-icons">
-                    <i class="bi bi-person"></i>
-                    <input required type="text" name="name" placeholder="Name"><br>
-                </div>
-                <div class="input-icons">
-                    <i class="bi bi-envelope"></i>
-                    <input required type="email" name="email" placeholder="Email"><br>
-                </div>
-                <div class="input-icons">
-                    <i class="bi bi-telephone"></i>
-                    <input required type="tel" name="phone" placeholder="Phone"><br>
-                </div>
-                <div class="input-icons flex-container">
-                    <i class="bi bi-pencil-square"></i>
-                    <textarea name="message" placeholder="Any note for us?" rows="8"></textarea><br>
-                </div>
-                <button name="submit" type="submit" class="btn btn-form">Submit</button>
-            </form>
-        </div>
-    </section>
     <section class="blog">
         <div class="container">
             <div class="section-heading">
@@ -329,6 +312,33 @@
                 </div>
             </div>
             <button>View more stories</button>
+        </div>
+    </section>
+    <section id="contact-us" class="contact">
+        <div class="container flex-container">
+            <div class="section-heading">
+                <h2>Get in touch with us!</h2>
+                <p>Share your ideas or any feedback. We are looking forward to hear from you!</p>
+            </div>
+            <form id="contact-form" class="contact-form" action="index.php" method="post">
+                <div class="input-icons">
+                    <i class="bi bi-person"></i>
+                    <input required type="text" name="name" placeholder="Name"><br>
+                </div>
+                <div class="input-icons">
+                    <i class="bi bi-envelope"></i>
+                    <input required type="email" name="email" placeholder="Email"><br>
+                </div>
+                <div class="input-icons">
+                    <i class="bi bi-telephone"></i>
+                    <input required type="tel" name="phone" placeholder="Phone"><br>
+                </div>
+                <div class="input-icons flex-container">
+                    <i class="bi bi-pencil-square"></i>
+                    <textarea name="message" placeholder="Any note for us?" rows="8"></textarea><br>
+                </div>
+                <button name="submit" type="submit" class="btn btn-form">Submit</button>
+            </form>
         </div>
     </section>
     <section class="footer">
@@ -389,7 +399,7 @@
         </div>
     </section>
     <footer>
-        <p>&copy;Copyright <?php echo date("Y"); ?>. Drafted by Uršulė Miknevičiūtė</p>
+        <p>&copy; <?php echo date("Y"); ?>.</p>
     </footer>
 </body>
 </html>
