@@ -8,7 +8,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Recipes</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope&family=Playfair+Display:wght@700&family=Roboto:wght@100&display=swap" rel="stylesheet">
@@ -30,7 +30,7 @@
                 <ul class="flex-container">
                     <li><a href="#home">Home</a></li>
                     <li class="dropdown">
-                        <a href="#recipes" id="dropdown-mother">Recipes</a>
+                        <a href="#recipes" id="dropdown-mother">Recipes<i class="bi bi-caret-down-fill"></i></a>
                         <ul class="dropdown-list">
                             <li><a href="#breakfast-recipes">Breakfast</a></li>
                             <li><a href="#lunch-recipes">Lunch</a></li>
@@ -60,18 +60,19 @@
                 </ul>
             </nav> -->
     </header>
-    <section id="home" class="hero">
-        <div class="container flex-container">
-            <div class="left">
-                <p><i class="bi bi-patch-exclamation-fill"></i>Vegetable power!!!</p>
-                <h1 id="home">A wellness spring with whole plant recipes</h1>
-                <p>Step into our welcoming sanctuary as we celebrate the power of whole plant recipes.</p>
-                <button>Let's Go!</button>
+    <section class="hero">
+        <div class="background">
+            <div class="container flex-container">
+                <div class="left">
+                    <p><i class="bi bi-patch-exclamation-fill"></i>Vegetable power!!!</p>
+                    <h1 id="home">A wellness spring with whole plant recipes</h1>
+                    <p>Step into our welcoming sanctuary as we celebrate the power of whole plant recipes.</p>
+                    <button>Let's Go!</button>
+                </div>
+                <div class="right">
+                    <img src="../darbas/images/main-photo.jpg" alt="photo of tomatoes">
+                </div> 
             </div>
-            <div class="right">
-                <div class="background-photo"></div>
-                <img src="../darbas/images/main-photo.jpg" alt="photo of tomatoes">
-            </div> 
         </div>
     </section>
     <div class="content1">
@@ -110,7 +111,11 @@
                     <p>Welcome to our plant-based paradise, where vibrant flavors meet compassionate living. We are passionate about promoting a sustainable and cruelty-free lifestyle through our delicious recipes. Join us on this culinary adventure as we redefine the art of plant-based cooking and inspire mindful eating choices for a better world.</p>
                 </div>
             </div>
-            <img src="./images/about.jpg" alt="very nice vegetables">
+            <div class="image-container">
+                <img src="./images/about.jpg" alt="very nice vegetables" class="top-image">
+                <img src="./images/imageBack.jpg" alt="photo background" class="bottom-image">
+            </div>
+        </div>
     </section>
     <div class="content2">
         <div class="container">
@@ -341,9 +346,9 @@
             </form>
         </div>
     </section>
-    <section class="footer">
+    <section class="bottom">
         <div class="container">
-            <div class="footer-social flex-container">
+            <div class="bottom-social flex-container">
                 <div class="logo flex-container">
                     <a href="#"><img id="logo" src="./images/footer_logo.png" alt="logo of recepies"></a>
                     <h2>Recipes</h2>
@@ -356,16 +361,15 @@
                     </ul>
                 </nav>
             </div>
-            <div class="footer-main flex-container">
+            <div class="bottom-main flex-container">
                 <div>
                     <h3>Explore</h3>
                     <ul>
-                        <li>Home</li>
-                        <li>About Us</li>
-                        <li>Services</li>
-                        <li>Appointments</li>
-                        <li>Blog</li>
-                        <li>Contact Us</li>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#recipes">Recipes</a></li>
+                        <li><a href="#about-us">About Us</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#contact-us">Contact Us!</a></li>
                     </ul>
                 </div>
                 <div>
@@ -383,7 +387,7 @@
                     <h3>Keep in Touch</h3>
                     <ul>
                         <li>Address: <span>24A Kingstone St, Los Vegas NC 28202, USA.</span></li>
-                        <li>Mail: <a href="mailto:support@doctors.com">support@doctors.com</a></li>
+                        <li>Mail: <a href="mailto:recipes@wholefood.com">support@doctors.com</a></li>
                         <li>Phone: <a href="tel:(+22)123-4567-900">(+22)123-4567-900</a></li>
                     </ul>
                 </div>
