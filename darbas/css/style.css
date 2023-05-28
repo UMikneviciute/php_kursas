@@ -4,15 +4,23 @@
     box-sizing: border-box;
 }
 
+:root {
+    --font-h: 'Playfair Display', serif;
+    --color-caps: #555555;
+    --color-main1: #EBF3F5;
+    --color-main2: #fff;
+    --color-dark: #5c8692;
+  }
+
 html {
     font-family: 'Manrope', sans-serif;
-    /* font-family: 'Playfair Display', serif; */
     font-size: 16px;
+    color: #141414;
 }
 
 body {
     margin: 0;
-    background-color: #EBF3F5;
+    background-color: var(--color-main1);
 }
 
 button {
@@ -31,7 +39,7 @@ ul {
 
 .site-header {
     border: solid 1px;
-    background-color: #fff;
+    background-color: var(--color-main2);
     width: 100%;
     display: block;
     padding: 0 60px;
@@ -42,7 +50,7 @@ ul {
 }
 
 .site-header h2 {
-    font-family: 'Playfair Display', serif;
+    font-family: var(--font-h);
     font-weight: 700;
     font-size: 1.75rem;
     line-height: 125%;
@@ -54,7 +62,6 @@ ul {
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
-    /* padding: 0 20px; */
 }
 
 .flex-container {
@@ -73,19 +80,20 @@ ul {
     margin-right: 10px;
 }
 
-.main-nav li, .social-nav li {
+.main-nav li,
+.social-nav li,
+.mobile-nav li {
     list-style: none;
-    /* border: solid 2px green; */
     display: inline-block; /*kas pasikeicia?*/
-    /* background-color: #fff; */
 }
 
 .main-nav ul, .social-nav ul {
     padding: 0;
 }
 
-.main-nav a {
-    color: #555555;
+.main-nav a,
+.mobile-nav a {
+    color: var(--color-caps);
     text-decoration: none;
     font-size: 1.125rem;
     margin: 0 5px;
@@ -117,7 +125,7 @@ ul {
 .dropdown-list li {
     display: block;
     max-width: 112px;
-    background-color: #fff;
+    background-color: var(--color-main2);
     border-radius: 5px;
 }
 
@@ -127,15 +135,49 @@ ul {
 }
 
 .social-nav a {
-    color: #141414;
     text-decoration: none; 
     font-size: 1rem;
     margin: 0 5px;
     padding: 10px 17px; 
 }
 
-.site-header .social-nav i {
+.site-header .social-nav i,
+.burger-icon i {
     font-size: 1.5rem;
+}
+
+#mMenu {
+    position: absolute;
+    top: 125px;
+    right: 0;
+    width: 100%;
+    z-index: 9999;
+    background-color: var(--color-main2);
+    display: none;
+}
+
+.mobile-nav {
+    display: none;
+}
+
+.mobile-nav .flex-container {
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.mobile-dropdown.flex-container {
+    flex-direction: row-reverse;
+}
+
+#mobile-flex {
+    display: flex;
+    flex-direction: row;
+    display: none;
+}
+
+#mobile-flex .mobile-dropdown {
+    position: absolute;
+    right: 0;
 }
 
 /*HERO*/
@@ -164,8 +206,8 @@ ul {
     width: 100%;
     background: linear-gradient(
     to right,
-    #EBF3F5 0%,
-    #EBF3F5 50%,
+    var(--color-main1); 0%,
+    var(--color-main1); 50%,
     rgb(56, 70, 73) 50%,
     rgb(56, 70, 73) 100%
     );
@@ -186,13 +228,13 @@ ul {
 }
 
 .right {
-    border: solid 10px #EBF3F5;
+    border: solid 10px var(--color-main1);
     overflow: hidden;
 }
 
 .right img {
     margin: 33px 68px 33px 0;
-    box-shadow: -10px -10px 40px #555555;
+    box-shadow: -10px -10px 40px var(--color-caps);
     z-index: 999;
 }
 
@@ -202,18 +244,17 @@ ul {
     line-height: 154%;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    color: #5c8692;
+    color: var(--color-dark);
 }
 
 .left i {
-    color: #5c8692;
+    color: var(--color-dark);
     margin-right: 9px;
 }
 
 .left h1 {
-    font-family: 'Playfair Display', serif;
+    font-family: var(--font-h);
     font-size: 4.375rem;
-    color: #141414;
     letter-spacing: -0.01em;
     line-height: 115%;
     font-weight: 700;
@@ -223,15 +264,15 @@ ul {
     font-size: 1.1875rem;
     font-weight: 400;
     line-height: 170%;
-    color: #555555;
+    color: var(--color-caps);
 }
 
 .left button {
     font-size: 0.875rem;
     width: 250px;
     height: 65px;
-    background-color: #5c8692;
-    color: #fff;
+    background-color: var(--color-dark);
+    color: var(--color-main2);
     text-transform: uppercase;
     line-height: 125%;
     font-weight: 800;
@@ -261,20 +302,17 @@ ul {
 .hero {
     border: solid 1px magenta;
     width: 100%;
-    background-color: #EBF3F5;
+    background-color: var(--color-main1);
 }
 
 .hero .container {
-/* margin-top: 190px; /   / Mano pakeitimai/
-/ margin-bottom: 190px; */
-max-width: 1200px;
-height: 925px;
+    max-width: 1200px;
+    height: 925px;
 }
 
 .hero .left {
-/* margin: 235px 0; */
-max-width: 510px;
-border: solid 2px;
+    max-width: 510px;
+    border: solid 2px;
 }
 
 .hero .left {
@@ -286,73 +324,71 @@ border: solid 2px;
     position: relative;
     width: calc(50% -17px);
     overflow: hidden;
-    border: 10px solid #EBF3F5;
+    border: 10px solid var(--color-main1);
     max-width: 660px;
     margin-right: 50px;
 }
 
 .right img {
-position: relative;
-right: 50px;
-margin: 59px 68px 59px 57px;
-box-shadow: -2px 4px 4px rgba(0, 0, 0, 0.25);
+    position: relative;
+    right: 50px;
+    margin: 59px 68px 59px 57px;
+    box-shadow: -2px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .left p:first-of-type {
-font-size: 0.9375rem;
-font-weight: 600;
-line-height: 154%;
-letter-spacing: 0.1em;
-text-transform: uppercase;
-color: #5c8692;
+    font-size: 0.9375rem;
+    font-weight: 600;
+    line-height: 154%;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--color-dark);
 }
 
 .left i {
-color: #5c8692;
-margin-right: 9px;
+    color: var(--color-dark);
+    margin-right: 9px;
 }
 
 .left h1 {
-font-family: 'Playfair Display', serif;
-font-size: 4.375rem;
-color: #141414;
-letter-spacing: -0.01em;
-line-height: 115%;
-font-weight: 700;
+    font-family: var(--font-h);
+    font-size: 4.375rem;
+    letter-spacing: -0.01em;
+    line-height: 115%;
+    font-weight: 700;
 }
 
 .left p {
-font-size: 1.1875rem;
-font-weight: 400;
-line-height: 170%;
-color: #555555;
+    font-size: 1.1875rem;
+    font-weight: 400;
+    line-height: 170%;
+    color: var(--color-caps);
 }
 
 .left button {
-font-size: 0.875rem;
-width: 250px;
-height: 65px;
-background-color: #5c8692;
-color: #fff;
-text-transform: uppercase;
-line-height: 125%;
-font-weight: 800;
-border: none;
-letter-spacing: 0.12em;
-border-radius: 3px;
+    font-size: 0.875rem;
+    width: 250px;
+    height: 65px;
+    background-color: var(--color-dark);
+    color: var(--color-main2);
+    text-transform: uppercase;
+    line-height: 125%;
+    font-weight: 800;
+    border: none;
+    letter-spacing: 0.12em;
+    border-radius: 3px;
 }
 
 /* RECEPIES */
 
 .content1 {
-    background-color: #fff;
+    background-color: var(--color-main2);
 }
 
 h3#recipes {
-    font-family: 'Playfair Display', serif;
+    font-family: var(--font-h);
     font-size: 2.8125rem;
     font-weight: 700;
-    color: #141414;
     text-align: center;
     padding-top: 50px;
 }
@@ -363,8 +399,7 @@ h3#recipes {
 }
 
 .recipes .flex-container h3 {
-    font-family: 'Playfair Display', serif;
-    color: #141414;
+    font-family: var(--font-h);
     font-style: normal;
     font-weight: 700;
     font-size: 1.625rem;
@@ -376,7 +411,7 @@ h3#recipes {
     font-size: 1.125rem;
     line-height: 165%;
     letter-spacing: 0.02em;
-    color: #555555;
+    color: var(--color-caps);
 }
 
 .recipes .flex-container div {
@@ -389,10 +424,9 @@ h3#recipes {
     font-size: 0.875rem;
     line-height: 125%;
     letter-spacing: 0.12em;
-    color: #141414;
     padding: 23px 41px;
-    border: solid 2px #5c8692;
-    background-color: #fff;
+    border: solid 2px var(--color-dark);
+    background-color: var(--color-main2);
     text-decoration: none;
 }
 /* ABOUT US */
@@ -404,7 +438,7 @@ h3#recipes {
 .about-heading > p:first-of-type {
     font-size: 0.9375rem;
     font-weight: 600;
-    color: #5c8692;
+    color: var(--color-dark);
     line-height: 154%;
     letter-spacing: 0.1em;
     text-transform: uppercase;
@@ -412,7 +446,7 @@ h3#recipes {
 }
 
 .about-heading h2 {
-    font-family:'Playfair Display', serif;
+    font-family: var(--font-h);
     font-size: 2.8125rem;
     font-weight: 700;
     line-height: 130%;
@@ -429,7 +463,7 @@ h3#recipes {
     font-weight: 400;
     font-size: 1.125rem;
     line-height: 175%;
-    color: #555555;
+    color: var(--color-caps);
 }
 
 .flex-container {
@@ -439,12 +473,10 @@ h3#recipes {
 
 .image-container {
     position: relative;
-    /* max-height: 500px;
-    width: 660px; */
   }
 
 .top-image {
-    box-shadow: 2px 2px 20px #555555;
+    box-shadow: 2px 2px 20px var(--color-caps);
     position: relative;
     top: 35px;
     right: 35px;
@@ -463,7 +495,7 @@ h3#recipes {
 /* BREAKFAST */
 
 .content2 {
-    background-color: #fff;
+    background-color: var(--color-main2);
 }
 
 .content2 .container > p:first-of-type,
@@ -473,7 +505,7 @@ h3#recipes {
     text-align: center;
     font-size: 0.9375rem;
     font-weight: 600;
-    color: #5c8692;
+    color: var(--color-dark);
     line-height: 154%;
     letter-spacing: 0.1em;
     text-transform: uppercase;
@@ -488,13 +520,12 @@ h3#recipes {
 .content2 h2, /*receptų skilčių pavadinimai*/
 .content3 h2,
 .content4 h2 {
-    font-family: 'Playfair Display', serif;
+    font-family: var(--font-h);
     font-style: bold;
     font-weight: 700;
     font-size: 2.8125rem;
     line-height: 130%;
     text-align: center;
-    color: #141414;
     margin: 9px 0 50px;
 }
 
@@ -506,15 +537,14 @@ h3#recipes {
 .dinner2 {
     font-size: 1.125rem;
     line-height: 165%;
-    color: #555555;
+    color: var(--color-caps);
 }
 
 .content2 h3, /*receptų pavadinimai*/
 .content3 h3,
 .content4 h3 {
-    font-family: 'Playfair Display', serif;
+    font-family: var(--font-h);
     font-size: 1.375rem;
-    color: #141414;
     line-height: 130%;
 }
 
@@ -543,13 +573,13 @@ h3#recipes {
 .content2 img,
 .content3 img,
 .content4 img {
-    box-shadow: 2px 2px 20px #5c8692;
+    box-shadow: 2px 2px 20px var(--color-dark);
 }
 
 /*DINNER*/
 
 .content4 {
-    background-color: #fff;
+    background-color: var(--color-main2);
 }
 
 /*TESTIMONIALS*/
@@ -561,7 +591,7 @@ h3#recipes {
 .testimonials-heading p {
     font-size: 0.9375rem;
     font-weight: 600;
-    color: #5c8692;
+    color: var(--color-dark);
     line-height: 154%;
     letter-spacing: 0.1em;
     text-transform: uppercase;
@@ -570,7 +600,7 @@ h3#recipes {
 }
 
 .testimonials-heading h2 {
-    font-family:'Playfair Display', serif;
+    font-family: var(--font-h);
     font-size: 2.8125rem;
     font-weight: 700;
     line-height: 130%;
@@ -591,7 +621,7 @@ h3#recipes {
 }
 
 .testimonials-content-box .top {
-    background-color: #fff;
+    background-color: var(--color-main2);
 }
 
 .top p {
@@ -604,7 +634,7 @@ h3#recipes {
 
 .testimonials-content-box .bottom {
     background-color: #1e2c30;
-    color: #fff;
+    color: var(--color-main2);
 }
 .bottom.flex-container {
     justify-content: space-between;
@@ -626,7 +656,7 @@ h3#recipes {
 }
 
 .reader-info p:first-of-type {
-    font-family:'Playfair Display', serif;
+    font-family: var(--font-h);
     font-size: 1.25rem;
     font-weight: 700;
     line-height: 160%;
@@ -649,7 +679,7 @@ h3#recipes {
 /*CONTACT FORM*/
 
 .contact {
-    background-color: #EBF3F5;
+    background-color: var(--color-main1);
 }
 
 .contact .flex-container {
@@ -662,36 +692,35 @@ h3#recipes {
 }
 
 .contact h2 {
-    font-family: 'Playfair Display', serif;
+    font-family: var(--font-h);
     font-weight: 700;
     font-size: 2.8125rem;
     line-height: 130%;
     letter-spacing: -0.01em;
-    color: #141414;
 }
 
 .contact p {
     font-weight: 400;
     font-size: 1.125rem;
     line-height: 175%;
-    color: #555555;
+    color: var(--color-caps);
 }
 
 .contact-form {
-    background-color: #fff;
+    background-color: var(--color-main2);
     padding: 66px 75px;
     margin: 132px 0;
-    box-shadow: 2px 2px 20px #5c8692;
+    box-shadow: 2px 2px 20px var(--color-dark);
 }
 
 .contact-form .input-icons {
-    border: 1px solid #5c8692;
+    border: 1px solid var(--color-dark);
     margin-bottom: 15px;
-    color: #5c8692;
+    color: var(--color-dark);
 }
 
 .contact-form input {
-    background-color: #fff;
+    background-color: var(--color-main2);
     width: auto;
     height: 65px;
     border: none;
@@ -708,7 +737,7 @@ h3#recipes {
 }
 
 .input::placeholder {
-    color: #555555;
+    color: var(--color-caps);
 }
 
 input:focus {
@@ -720,7 +749,7 @@ textarea:focus {
   }
 
 textarea {
-    background-color: #fff;
+    background-color: var(--color-main2);
     width: 400px;
     height: 136px;
     border: none;
@@ -728,10 +757,10 @@ textarea {
 }
 
 .contact-form button {
-    background-color: #5c8692;
+    background-color: var(--color-dark);
     width: 468px;
     height: 65px;
-    color: #fff;
+    color: var(--color-main2);
     font-size: 0.875rem;
     font-weight: 800;
     line-height: 125%;
@@ -746,7 +775,7 @@ textarea {
 /*BLOG*/
 
 .blog{
-    background-color: #fff;
+    background-color: var(--color-main2);
 }
 
 .blog .section-heading {
@@ -761,17 +790,16 @@ textarea {
     font-size: 0.9375rem;
     line-height: 154%;
     letter-spacing: 0.1em;
-    color: #5c8692;
+    color: var(--color-dark);
     margin-bottom: 0;
 }
 
 .blog .section-heading h2 {
-    font-family: 'Playfair Display', serif;
+    font-family: var(--font-h);
     font-weight: 700;
     font-size: 2.8125rem;
     line-height: 130%;
     letter-spacing: -0.01em;
-    color: #141414;
     margin-top: 4px;
 }
 
@@ -780,25 +808,24 @@ textarea {
 }
 
 .blog-content-item {
-    background-color: #EBF3F5;
+    background-color: var(--color-main1);
     border: solid 1px green;
     max-width: 370px;
 }
 
 .blog-content-item h3 {
-    font-family: 'Playfair Display', serif;
+    font-family: var(--font-h);
     font-size: 1.375rem;
     font-weight: 700;
     line-height: 140%;
     letter-spacing: 0.02em;
-    color: #141414;
 }
 
 .blog-content-item p{
     font-size: 1.125rem;
     line-height: 155%;
     letter-spacing: 0.02em;
-    color: #555555;
+    color: var(--color-caps);
 }
 
 .blog button {
@@ -807,10 +834,9 @@ textarea {
     font-size: 0.875rem;
     line-height: 125%;
     letter-spacing: 0.12em;
-    color: #141414;
     padding: 23px 41px;
-    border: solid 2px #5c8692;
-    background-color: #fff;
+    border: solid 2px var(--color-dark);
+    background-color: var(--color-main2);
     margin: 60px 475px 150px;
 }
 
@@ -818,7 +844,7 @@ textarea {
 
 .bottom {
     background-color: #1e2c30;
-    color: #fff;
+    color: var(--color-main2);
 }
 
 .bottom .bottom-social.flex-container {
@@ -836,7 +862,7 @@ textarea {
 
 .bottom .logo h2 {
     margin: 4px auto 11px 17px;
-    font-family: 'Playfair Display', serif;
+    font-family: var(--font-h);
     font-size: 2.5rem;
     font-weight: 700;
     line-height: 125%;
@@ -844,16 +870,16 @@ textarea {
 }
 
 .bottom h3 {
-    font-family: 'Playfair Display', serif;
+    font-family: var(--font-h);
     font-weight: 700;
     font-size: 1.375rem;
     line-height: 140%;
 }
 
 .bottom .social-nav ul li a {
-    color: #fff;
+    color: var(--color-main2);
     padding: 16px 22px 17px 21px;
-    border: 2px solid #5c8692;
+    border: 2px solid var(--color-dark);
     font-size: 1.125rem;
     line-height: 120%;
     letter-spacing: 0.05em;
@@ -878,7 +904,7 @@ textarea {
 }
 
 .bottom-main a {
-    color: #fff;
+    color: var(--color-main2);
     text-decoration: none;
 }
 
@@ -886,7 +912,7 @@ textarea {
 
 footer {
     background-color: #111e22;
-    color: #fff;
+    color: var(--color-main2);
 }
 
 footer p {
@@ -897,4 +923,17 @@ footer p {
     letter-spacing: -0.01em;
     text-align: center;
     padding: 20px 0;
+}
+
+/* MOBILE */
+
+@media all and (max-width:1121px) {
+    .main-nav,
+    .site-header .social-nav {
+        display: none;
+    }
+
+    .mobile-nav {
+        display: block;
+    }
 }

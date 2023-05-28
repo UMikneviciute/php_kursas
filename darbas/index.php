@@ -16,6 +16,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <script src="./js/javascript.js" defer></script>
     <link rel="stylesheet" href="../darbas/css/normalize.css">
     <link rel="stylesheet" href="../darbas/css/style.css">
 </head>
@@ -49,16 +50,28 @@
                     <li><a href="#" target="_blank"><i class="bi bi-instagram"></a></i></li>
                 </ul>
             </nav>
-        </div>
-            <!--<nav class="mobile-nav">
-                <ul id="mMenu">
+            <nav class="mobile-nav">
+                <ul id="mMenu" class="flex-container">
                     <li><a href="#home">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#recipes">Recipes</a></li>
-                    <li><a href="#sign-up">Sign Up!</a></li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0);" id="dropdown-mother" onclick="recipes()"><i class="bi bi-caret-left-fill"></i>Recipes</a>
+                        <ul id="mobile-flex" class="dropdown-list flex-container">
+                            <div class="mobile-dropdown flex-container">
+                                <li><a href="#breakfast-recipes">Breakfast</a></li>
+                                <li><a href="#lunch-recipes">Lunch</a></li>
+                                <li><a href="#dinner-recipes">Dinner</a></li>
+                            </div>
+                        </ul>
+                    </li>
+                    <li><a href="#about-us">About Us</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
                     <li><a href="#contact-us">Contact Us!</a></li>
                 </ul>
-            </nav> -->
+                <a href="javascript:void(0);" class="burger-icon" onclick="myFunction()">
+                    <i class="bi bi-list"></i>
+                </a>
+            </nav>
+        </div>
     </header>
     <section class="hero">
         <div class="background">
