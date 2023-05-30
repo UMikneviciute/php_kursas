@@ -87,6 +87,10 @@ ul {
     display: inline-block; /*kas pasikeicia?*/
 }
 
+.site-header .social-nav li i {
+    color: #141414;
+}
+
 .main-nav ul, .social-nav ul {
     padding: 0;
 }
@@ -365,7 +369,7 @@ ul {
     color: var(--color-caps);
 }
 
-.left button {
+.hero .left button {
     font-size: 0.875rem;
     width: 250px;
     height: 65px;
@@ -379,13 +383,13 @@ ul {
     border-radius: 3px;
 }
 
-/* RECEPIES */
+/* RECEPES */
 
-.content1 {
+.intro {
     background-color: var(--color-main2);
 }
 
-h3#recipes {
+#recipes h3 {
     font-family: var(--font-h);
     font-size: 2.8125rem;
     font-weight: 700;
@@ -395,7 +399,7 @@ h3#recipes {
 
 .recipes .flex-container {
     justify-content: space-between;
-    margin-bottom: 150px;
+    margin-bottom: 130px;
 }
 
 .recipes .flex-container h3 {
@@ -416,9 +420,14 @@ h3#recipes {
 
 .recipes .flex-container div {
     max-width: 330px;
+    height: 647px;
 }
 
-.recipes a:last-of-type {
+#more {
+    display: none;
+}
+
+.recipes button{
     text-transform: uppercase;
     font-weight: 800;
     font-size: 0.875rem;
@@ -429,6 +438,7 @@ h3#recipes {
     background-color: var(--color-main2);
     text-decoration: none;
 }
+
 /* ABOUT US */
 
 .about-heading {
@@ -494,13 +504,13 @@ h3#recipes {
 
 /* BREAKFAST */
 
-.content2 {
+.breakfast {
     background-color: var(--color-main2);
 }
 
-.content2 .container > p:first-of-type,
-.content3 .container > p:first-of-type,
-.content4 .container > p:first-of-type {
+.breakfast .container > p:first-of-type,
+.lunch .container > p:first-of-type,
+.dinner .container > p:first-of-type {
     margin: 146px 0 0;
     text-align: center;
     font-size: 0.9375rem;
@@ -511,15 +521,15 @@ h3#recipes {
     text-transform: uppercase;
 }
 
-.content2 .container,
-.content3 .container,
-.content4 .container {
+.breakfast .container,
+.lunch .container,
+.dinner .container {
     padding-bottom: 145px;
 }
 
-.content2 h2, /*receptų skilčių pavadinimai*/
-.content3 h2,
-.content4 h2 {
+.breakfast h2, /*receptų skilčių pavadinimai*/
+.lunch h2,
+.dinner h2 {
     font-family: var(--font-h);
     font-style: bold;
     font-weight: 700;
@@ -540,9 +550,9 @@ h3#recipes {
     color: var(--color-caps);
 }
 
-.content2 h3, /*receptų pavadinimai*/
-.content3 h3,
-.content4 h3 {
+.breakfast h3, /*receptų pavadinimai*/
+.lunch h3,
+.dinner h3 {
     font-family: var(--font-h);
     font-size: 1.375rem;
     line-height: 130%;
@@ -564,21 +574,21 @@ h3#recipes {
     padding-left: 25px;
 }
 
-.content2 ul,
-.content3 ul,
-.content4 ul {
+.breakfast ul,
+.lunch ul,
+.dinner ul {
     padding-left: 40px;
 }
 
-.content2 img,
-.content3 img,
-.content4 img {
+.breakfast img,
+.lunch img,
+.dinner img {
     box-shadow: 2px 2px 20px var(--color-dark);
 }
 
 /*DINNER*/
 
-.content4 {
+.dinner {
     background-color: var(--color-main2);
 }
 

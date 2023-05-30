@@ -45,9 +45,9 @@
             </nav>       
             <nav class="social-nav">
                 <ul class="flex-container">
-                    <li><a href="#" target="_blank"><i class="bi bi-facebook"></i></a></li>
-                    <li><a href="#" target="_blank"><i class="bi bi-twitter"></i></a></li>
-                    <li><a href="#" target="_blank"><i class="bi bi-instagram"></a></i></li>
+                    <li><a href="https://facebook.com/" target="_blank"><i class="bi bi-facebook"></i></a></li>
+                    <li><a href="https://twitter.com/" target="_blank"><i class="bi bi-twitter"></i></a></li>
+                    <li><a href="https://instagram.com/" target="_blank"><i class="bi bi-instagram"></a></i></li>
                 </ul>
             </nav>
             <nav class="mobile-nav">
@@ -80,7 +80,7 @@
                     <p><i class="bi bi-patch-exclamation-fill"></i>Vegetable power!!!</p>
                     <h1 id="home">A wellness spring with whole plant recipes</h1>
                     <p>Step into our welcoming sanctuary as we celebrate the power of whole plant recipes.</p>
-                    <button>Let's Go!</button>
+                    <button class="button" onclick="scrollToRecipes()">Let's Go!</button>
                 </div>
                 <div class="right">
                     <img src="../darbas/images/main-photo.jpg" alt="photo of tomatoes">
@@ -88,28 +88,28 @@
             </div>
         </div>
     </section>
-    <div class="content1">
-        <div class="container">
-            <h3 id="recipes">Recipes</h3>
+    <div class="intro">
+        <div id="recipes" class="container">
+            <h3>Recipes</h3>
             <nav class="recipes">
                 <div class="flex-container">
                     <div>
                         <a href="#breakfast-recipes"><img src="../darbas/images/breakfast.jpg" alt="breakfast"></a> <!--nuotrauka turi nuvesti į turinio vietą-->
                         <h3>Breakfast</h3>
-                        <p>Start your day with vibrant energy and nourishment. Explore our mouthwatering whole food plant-based breakfast recipes!</p><br><br>
-                        <a href="#breakfast-recipes">Read more</a>
+                        <p>Fuel your mornings with wholesome goodness and awaken your<span id="dots1">...</span><span id="more1"> taste buds to the delightful array of flavors that our plant-based breakfast recipes have to offer.</span></p><br><br>
+                        <button id="myBtn1" onclick="toggleText('myBtn1', 'dots1', 'more1')">Read more</button>
                     </div>
                     <div>
                         <a href="#lunch-recipes"><img src="../darbas/images/lunch.jpg" alt="lunch"></a> <!--nuotrauka turi nuvesti į turinio vietą-->
                         <h3>Lunch</h3>
-                        <p>Revitalize your midday with wholesome goodness. Dive into our captivating whole food plant-based lunch recipes.</p><br><br>
-                        <a href="#lunch-recipes">Read more</a>
+                        <p>Elevate your afternoons with a burst of nourishment and<span id="dots2">...</span><span id="more2"> culinary creativity as you explore our enticing whole food plant-based lunch recipes.</span></p><br><br>
+                        <button id="myBtn2" onclick="toggleText('myBtn2', 'dots2', 'more2')">Read more</button>
                     </div>
                     <div>
                         <a href="#dinner-recipes"><img src="../darbas/images/dinner.jpg" alt="dinner"></a> <!--nuotrauka turi nuvesti į turinio vietą-->
                         <h3>Dinner</h3>
-                        <p>Elevate your evenings with flavorful delights. Discover our enticing whole food plant-based dinner recipes and embark on a culinary journey.</p><br><br>
-                        <a href="#dinner-recipes">Read more</a>
+                        <p>Savor the rich and satisfying flavors of our<span id="dots3">...</span><span id="more3"> plant-based dinner recipes, carefully crafted to elevate your evenings and nourish your body with every delicious bite.</span></p><br><br>
+                        <button id="myBtn3" onclick="toggleText('myBtn3', 'dots3', 'more3')">Read more</button>
                     </div>
                 </div>
             </nav>
@@ -130,7 +130,7 @@
             </div>
         </div>
     </section>
-    <div class="content2">
+    <div class="breakfast">
         <div class="container">
             <p>Our recipes</p>
             <h2 id="breakfast-recipes">Breakfast Recipes</h2>
@@ -164,7 +164,7 @@
             </div>            
         </div> 
     </div>
-    <div class="content3">
+    <div class="lunch">
         <div class="container">
             <p>Our recipes</p>
             <h2 id="lunch-recipes">Lunch Recipes</h2>
@@ -205,7 +205,7 @@
             </div>            
         </div> 
     </div>
-    <div class="content4">
+    <div class="dinner">
         <div class="container">
             <p>Our recipes</p>
             <h2 id="dinner-recipes">Dinner Recipes</h2>
@@ -368,9 +368,9 @@
                 </div> 
                 <nav class="social-nav">
                     <ul class="flex-container">
-                        <li><a href="#" target="_blank"><i class="bi bi-facebook"></i></a></li>
-                        <li><a href="#" target="_blank"><i class="bi bi-twitter"></i></a></li>
-                        <li><a href="#" target="_blank"><i class="bi bi-instagram"></a></i></li>
+                        <li><a href="https://facebook.com/" target="_blank"><i class="bi bi-facebook"></i></a></li>
+                        <li><a href="https://twitter.com/" target="_blank"><i class="bi bi-twitter"></i></a></li>
+                        <li><a href="https://instagram.com/" target="_blank"><i class="bi bi-instagram"></a></i></li>
                     </ul>
                 </nav>
             </div>
