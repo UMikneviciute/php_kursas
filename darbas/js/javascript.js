@@ -41,6 +41,6 @@ document.getElementById("more3").style.display = "none";
 
 function scrollToRecipes() {
     let formSection = document.querySelector('#recipes');
-    let form = formSection.querySelector('h3')
+    let form = formSection.querySelector('h2')
     form.scrollIntoView({ behavior: 'smooth' });
 }

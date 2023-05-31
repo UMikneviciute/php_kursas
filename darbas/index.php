@@ -90,7 +90,7 @@
     </section>
     <div class="intro">
         <div id="recipes" class="container">
-            <h3>Recipes</h3>
+            <h2>Recipes</h2>
             <nav class="recipes">
                 <div class="flex-container">
                     <div>
@@ -359,9 +359,9 @@
             </form>
         </div>
     </section>
-    <section class="bottom">
+    <section class="foot">
         <div class="container">
-            <div class="bottom-social flex-container">
+            <div class="foot-social flex-container">
                 <div class="logo flex-container">
                     <a href="#"><img id="logo" src="./images/footer_logo.png" alt="logo of recepies"></a>
                     <h2>Recipes</h2>
@@ -374,7 +374,7 @@
                     </ul>
                 </nav>
             </div>
-            <div class="bottom-main flex-container">
+            <div class="foot-main flex-container">
                 <div>
                     <h3>Explore</h3>
                     <ul>
