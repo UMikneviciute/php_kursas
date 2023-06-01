@@ -18,6 +18,10 @@ html {
     color: #141414;
 }
 
+* {
+    border: solid 1px red;
+}
+
 body {
     margin: 0;
     background-color: var(--color-main1);
@@ -59,8 +63,8 @@ ul {
 
 .container {
     /* border: solid 1px red; */
-    max-width: 1200px;
-    width: 100%;
+    /* max-width: 1200px;
+    width: 100%; */
     margin: 0 auto;
 }
 
@@ -170,7 +174,7 @@ ul {
 }
 
 .mobile-dropdown.flex-container {
-    flex-direction: row-reverse;
+    flex-direction: row;
 }
 
 #mobile-flex {
@@ -225,7 +229,7 @@ ul {
     /* border: 1px solid blue; */
 }
 
-.right {
+.hero .right {
     position: relative;
     width: calc(50% -17px);
     overflow: hidden;
@@ -234,14 +238,14 @@ ul {
     margin-right: 50px;
 }
 
-.right img {
+.hero .right img {
     position: relative;
     right: 50px;
     margin: 59px 68px 59px 57px;
     box-shadow: -2px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.left p:first-of-type {
+.hero .left p:first-of-type {
     font-size: 0.9375rem;
     font-weight: 600;
     line-height: 154%;
@@ -250,12 +254,12 @@ ul {
     color: var(--color-dark);
 }
 
-.left i {
+.hero .left i {
     color: var(--color-dark);
     margin-right: 9px;
 }
 
-.left h1 {
+.hero .left h1 {
     font-family: var(--font-h);
     font-size: 4.375rem;
     letter-spacing: -0.01em;
@@ -263,7 +267,7 @@ ul {
     font-weight: 700;
 }
 
-.left p {
+.hero .left p {
     font-size: 1.1875rem;
     font-weight: 400;
     line-height: 170%;
@@ -379,12 +383,12 @@ ul {
     color: var(--color-caps);
 }
 
-.flex-container {
+.about-us .flex-container {
     justify-content: space-between;
     align-items: center;
 }
 
-.image-container {
+.about-us .image-container {
     position: relative;
   }
 
@@ -431,7 +435,7 @@ ul {
     padding-bottom: 145px;
 }
 
-.breakfast h2, /*receptų skilčių pavadinimai*/
+.breakfast h2,
 .lunch h2,
 .dinner h2 {
     font-family: var(--font-h);
@@ -443,7 +447,7 @@ ul {
     margin: 9px 0 50px;
 }
 
-.breakfast1, /*visų receptų ir ingredientų šriftai*/
+.breakfast1,
 .breakfast2,
 .lunch1,
 .lunch2,
@@ -451,10 +455,9 @@ ul {
 .dinner2 {
     font-size: 1.125rem;
     line-height: 165%;
-    color: var(--color-caps);
 }
 
-.breakfast h3, /*receptų pavadinimai*/
+.breakfast h3,
 .lunch h3,
 .dinner h3 {
     font-family: var(--font-h);
@@ -487,6 +490,8 @@ ul {
 .breakfast img,
 .lunch img,
 .dinner img {
+    max-width: 100%;
+    height: auto;
     box-shadow: 2px 2px 20px var(--color-dark);
 }
 
@@ -538,7 +543,7 @@ ul {
     background-color: var(--color-main2);
 }
 
-.top p {
+.testimonials .top p {
     font-size: 1.1875rem;
     font-weight: 400;
     line-height: 180%;
@@ -600,9 +605,8 @@ ul {
     justify-content: space-between;
 }
 
-.section-heading {
+.contact .section-heading {
     align-self: center;
-    margin-right: 100px;
 }
 
 .contact h2 {
@@ -693,6 +697,11 @@ textarea {
     background-color: var(--color-main2);
 }
 
+.flex-container-button {
+    display: flex;
+    flex-direction: column;
+}
+
 .blog .section-heading {
     text-align: center;
     padding-top: 145px;
@@ -724,8 +733,8 @@ textarea {
 
 .blog-content-item {
     background-color: var(--color-main1);
-    /* border: solid 1px green; */
     max-width: 370px;
+    display: block;
 }
 
 .blog-content-item h3 {
@@ -752,7 +761,8 @@ textarea {
     padding: 23px 41px;
     border: solid 2px var(--color-dark);
     background-color: var(--color-main2);
-    margin: 60px 475px 150px;
+    margin: 60px 0 150px 0;
+    align-self: center;
 }
 
 /*FOOT*/
@@ -844,7 +854,7 @@ footer p {
 
 @media all and (max-width:1271px) {
     .hero .background {
-        margin-left: 30px;
+        /* margin-left: 30px; */
         margin-right: 30px;
     }
 }
@@ -859,13 +869,16 @@ footer p {
         display: block;
     }
 
+    .mobile-nav a:hover {
+        background-color: #f7f7f7;
+        border-radius: 5px;
+    }
+
     .hero .flex-container,
     .recipes .flex-container,
     .about-us .flex-container,
-    .breakfast .flex-container,
-    .lunch .flex-container,
-    .dinner .flex-container,
-    .blog .flex-container,
+    .testimonials-content.flex-container,
+    .blog-content.flex-container,
     #contact-us .flex-container {
         flex-direction:column;
     }
@@ -873,19 +886,16 @@ footer p {
     .hero .left {
         position: relative;
         margin-top: 50px;
-        width: 100%;
         padding-right: 40px;
     }
 
     .hero .left h1 {
         font-size: 3rem;
-        line-height: 110%;
         text-shadow: 1.5px 1.5px var(--color-main1);
     }
 
     .hero .left p {
         font-size: 1rem;
-        line-height: 150%;
         text-shadow: 1px 1px var(--color-main1);
     }
 
@@ -897,6 +907,48 @@ footer p {
         max-width: 100%;
         margin: 20px;
         height: calc(100% - 10%);
+    }
+
+    #recipes h2 {
+        padding-top: 80px;
+        margin-bottom: 80px;
+        font-size: 2.5rem;
+    }
+    
+    .recipes .flex-container h3 {
+        font-size: 1.25rem;
+        order: 0;
+    }
+    
+    .recipes .flex-container p {
+        font-size: 0.9375rem;
+        order: 2;
+    }
+
+    .recipes .flex-container img {
+        order: 1;
+    }
+
+    .about-heading > p:first-of-type {
+        font-size: 0.8125rem;
+    }
+
+    .about-heading h2 {
+    font-size: 2rem;
+    }
+
+    .about-content p {
+    font-size: 0.9375rem;
+    }
+
+    .top-image {
+    top: 20px;
+    right: 20px;
+    max-width: 400px;
+    }
+
+    .bottom-image {
+    max-width: 400px;
     }
 
     .breakfast1,
@@ -911,139 +963,132 @@ footer p {
         padding-left: 25px;
     }
 
-    .blog .flex-container {
-        justify-content: space-around;
+    .breakfast .container > p:first-of-type,
+    .lunch .container > p:first-of-type,
+    .dinner .container > p:first-of-type {
+        font-size: 0.8125rem;
+        padding-top: 100px;
+    }
+
+    .breakfast h2,
+    .lunch h2,
+    .dinner h2 {
+        font-size: 2rem;
+    }
+
+    .breakfast1,
+    .breakfast2,
+    .lunch1,
+    .lunch2,
+    .dinner1,
+    .dinner2 {
+        font-size: 0.9375rem;
+        margin-right: 25px;
+    }
+
+    .breakfast img,
+    .lunch img,
+    .dinner img {
+        margin-left: 25px;
+        max-width: 400px;
+    }
+
+    .testimonials-content.flex-container {
+        gap: 50px;
+    }
+
+    .testimonials-content .testimonials-content-box:first-of-type {
+        margin-right: 0;
+    }
+
+    .testimonials-heading p {
+        font-size: 0.8125rem;
+        margin-top: 88px;
+    }
+    
+    .testimonials-heading h2 {
+        font-size: 2.25rem;
+    }
+    
+    .top p {
+        font-size: 0.9375rem;
+    }
+    
+    .bottom div img {
+        max-width: 54px;
+        margin: 50px 15px 15px 36px;
+    }
+    
+    .reader-info i {
+        font-size: 0.875rem;
+    }
+    
+    .reader-info p:first-of-type {
+        font-size: 1.125rem;
+    }
+    
+    .reader-info p:last-of-type {
+        font-size: 0.75rem;
+    }
+
+    .blog .section-heading {
+        padding-top: 88px;
+    }
+    
+    .blog .section-heading p {
+        font-size: 0.8125rem;
+    }
+
+    .blog .section-heading h2 {
+        font-size: 2.25rem;
     }
 
     .blog-content-item {
-        margin-bottom: 30px;
+        max-width: 100%;
+        margin: 30px;
+        display: flex;
+    }
+
+    .blog-content-item h3 {
+        font-size: 1.25rem;
+    }
+
+    .blog-content-item p {
+        font-size: 1rem;
+    }
+
+    .blog button {
+        font-size: 0.75rem;
+        padding: 18px 35px;
+        margin-bottom: 88px;
+        width: max-content;
+    }
+
+    .blog-text {
+        max-width: 100%;
+        margin-left: 30px;
     }
 
     #contact-form {
         margin-top: 35px;
     }
 
-
-
-    .service {
-        max-width:90%;
+    .foot .logo {
+        margin-left: 25px;
     }
 
-    .footer ul {
-        padding-left:0;
-    }
-}
-
-@media all and (max-width:640px) {
-    .footer-nav .flex-container {
-        flex-direction:column;
-        align-items:center;
-    }
-}
-
-@media all and (max-width:414px) {
-    section > .container {
-        padding:70px 0;
+    .foot-main {
+        margin-left: 25px;
+        flex-wrap: wrap;
+        margin-right: 25px;
     }
 
-    h1 {
-        font-size:2.3rem;
+    .foot-main ul {
+        margin-left: 15px;
     }
 
-    .section-heading h2{
-        font-size:2.2rem;
+    .foot-main ul:first-of-type {
+        margin-left: 0;
     }
-
 
 }
-
-/*@media all and (max-width:980px) {
-    .main-nav {
-        display:none;
-    }
-
-    .site-header .container {
-        display:block;
-    }
-
-    .logo {
-        float:left;
-    }
-
-    .mobile-nav {
-        position:relative;
-        width:100%;
-        display:block;
-    }
-
-    .mobile-nav li {
-        list-style:none;
-    }
-
-    .mobile-nav ul {
-        flex-direction:column;
-        display:none;
-        position:absolute;
-        width:100%;
-        top:133px;
-        padding:20px;
-        background-color:#fff;
-    }
-
-    .mobile-nav a {
-        color:#3c4761;
-        font-size:1rem;
-        text-transform: uppercase;
-        text-decoration: none;
-        margin:0 5px;
-        padding:10px 17px;
-        display:block;
-    }
-
-    .mobile-nav a:hover, .mobile-nav a:active {
-        background-color: #643a79;
-        color:#fff;
-        border-radius:5px;
-    }
-
-    .mobile-nav a.icon {
-        display:block;
-        position:absolute;
-        right:0;
-        top:60px;
-        color:#fff;
-    }
-
-    .services .section-content{
-        flex-direction:column;
-    }
-
-    .service {
-        max-width:90%;
-    }
-
-    .footer ul {
-        padding-left:0;
-    }
-}
-
-@media all and (max-width:640px) {
-    .footer-nav .flex-container {
-        flex-direction:column;
-        align-items:center;
-    }
-}
-
-@media all and (max-width:414px) {
-    section > .container {
-        padding:70px 0;
-    }
-
-    h1 {
-        font-size:2.3rem;
-    }
-
-    .section-heading h2{
-        font-size:2.2rem;
-    }
-}*/

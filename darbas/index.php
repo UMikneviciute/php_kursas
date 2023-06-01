@@ -94,19 +94,19 @@
             <nav class="recipes">
                 <div class="flex-container">
                     <div>
-                        <a href="#breakfast-recipes"><img src="../darbas/images/breakfast.jpg" alt="breakfast"></a> <!--nuotrauka turi nuvesti į turinio vietą-->
+                        <a href="#breakfast-recipes"><img src="../darbas/images/breakfast.jpg" alt="breakfast"></a>
                         <h3>Breakfast</h3>
                         <p>Fuel your mornings with wholesome goodness and awaken your<span id="dots1">...</span><span id="more1"> taste buds to the delightful array of flavors that our plant-based breakfast recipes have to offer.</span></p><br><br>
                         <button id="myBtn1" onclick="toggleText('myBtn1', 'dots1', 'more1')">Read more</button>
                     </div>
                     <div>
-                        <a href="#lunch-recipes"><img src="../darbas/images/lunch.jpg" alt="lunch"></a> <!--nuotrauka turi nuvesti į turinio vietą-->
+                        <a href="#lunch-recipes"><img src="../darbas/images/lunch.jpg" alt="lunch"></a>
                         <h3>Lunch</h3>
                         <p>Elevate your afternoons with a burst of nourishment and<span id="dots2">...</span><span id="more2"> culinary creativity as you explore our enticing whole food plant-based lunch recipes.</span></p><br><br>
                         <button id="myBtn2" onclick="toggleText('myBtn2', 'dots2', 'more2')">Read more</button>
                     </div>
                     <div>
-                        <a href="#dinner-recipes"><img src="../darbas/images/dinner.jpg" alt="dinner"></a> <!--nuotrauka turi nuvesti į turinio vietą-->
+                        <a href="#dinner-recipes"><img src="../darbas/images/dinner.jpg" alt="dinner"></a>
                         <h3>Dinner</h3>
                         <p>Savor the rich and satisfying flavors of our<span id="dots3">...</span><span id="more3"> plant-based dinner recipes, carefully crafted to elevate your evenings and nourish your body with every delicious bite.</span></p><br><br>
                         <button id="myBtn3" onclick="toggleText('myBtn3', 'dots3', 'more3')">Read more</button>
@@ -300,36 +300,38 @@
                 <p>Our blog</p>
                 <h2>Latest Updates</h2>
             </div>
-            <div class="blog-content flex-container">
-                <div class="blog-content-item">
-                    <div class="blog-image">
-                        <img src="../darbas/images/spices.jpg" alt="spices">
+            <div class="flex-container-button">
+                <div class="blog-content flex-container">
+                    <div class="blog-content-item flex-container">
+                        <div class="blog-image">
+                            <img src="../darbas/images/spices.jpg" alt="spices">
+                        </div>
+                        <div class="blog-text">
+                            <h3>Spice Up Your Plant-Based Culinary Journey!</h3>
+                            <p>Discover the aromatic world of spices and elevate your plant-based dishes with enticing flavors and vibrant culinary experiences.</p>
+                        </div>
                     </div>
-                    <div class="blog-text">
-                        <h3>Spice Up Your Plant-Based Culinary Journey!</h3>
-                        <p>Discover the aromatic world of spices and elevate your plant-based dishes with enticing flavors and vibrant culinary experiences.</p>
+                    <div class="blog-content-item flex-container">
+                        <div class="blog-image">
+                            <img src="../darbas/images/mindfulness.jpg" alt="mindfulness">
+                        </div>
+                        <div class="blog-text">
+                            <h3>Embrace Mindfulness in Your Lifestyle</h3>
+                            <p>Uncover the power of mindfulness and find balance, joy, and connection through mindful practices that enhance your plant-based journey.</p>
+                        </div>
+                    </div>
+                    <div class="blog-content-item flex-container">
+                        <div class="blog-image">
+                            <img src="../darbas/images/protein.jpg" alt="protein">
+                        </div>
+                        <div class="blog-text">
+                            <h3>Unleash the Power of Wholesome Plant Proteins</h3>
+                            <p>Unlock the potential of lentils, beans, chickpeas, and more as we delve into the world of plant-based proteins, offering nourishment and delicious possibilities.</p>
+                        </div>
                     </div>
                 </div>
-                <div class="blog-content-item">
-                    <div class="blog-image">
-                        <img src="../darbas/images/mindfulness.jpg" alt="mindfulness">
-                    </div>
-                    <div class="blog-text">
-                        <h3>Embrace Mindfulness in Your Lifestyle</h3>
-                        <p>Uncover the power of mindfulness and find balance, joy, and connection through mindful practices that enhance your plant-based journey.</p>
-                    </div>
-                </div>
-                <div class="blog-content-item">
-                    <div class="blog-image">
-                        <img src="../darbas/images/protein.jpg" alt="protein">
-                    </div>
-                    <div class="blog-text">
-                        <h3>Unleash the Power of Wholesome Plant Proteins</h3>
-                        <p>Unlock the potential of lentils, beans, chickpeas, and more as we delve into the world of plant-based proteins, offering nourishment and delicious possibilities.</p>
-                    </div>
-                </div>
+                <button>View more stories</button>
             </div>
-            <button>View more stories</button>
         </div>
     </section>
     <section id="contact-us" class="contact">
@@ -399,7 +401,7 @@
                 <div>
                     <h3>Keep in Touch</h3>
                     <ul>
-                        <li>Address: <span>24A Kingstone St, Los Vegas NC 28202, USA.</span></li>
+                        <li>Address: <span>24A Kingstone St, Los Vegas, USA.</span></li>
                         <li>Mail: <a href="mailto:recipes@wholefood.com">support@doctors.com</a></li>
                         <li>Phone: <a href="tel:(+22)123-4567-900">(+22)123-4567-900</a></li>
                     </ul>
