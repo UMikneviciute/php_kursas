@@ -18,10 +18,6 @@ html {
     color: #141414;
 }
 
-* {
-    border: solid 1px red;
-}
-
 body {
     margin: 0;
     background-color: var(--color-main1);
@@ -63,8 +59,8 @@ ul {
 
 .container {
     /* border: solid 1px red; */
-    /* max-width: 1200px;
-    width: 100%; */
+    max-width: 1200px;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -174,7 +170,7 @@ ul {
 }
 
 .mobile-dropdown.flex-container {
-    flex-direction: row;
+    flex-direction: row-reverse;
 }
 
 #mobile-flex {
@@ -229,7 +225,7 @@ ul {
     /* border: 1px solid blue; */
 }
 
-.hero .right {
+.right {
     position: relative;
     width: calc(50% -17px);
     overflow: hidden;
@@ -238,14 +234,14 @@ ul {
     margin-right: 50px;
 }
 
-.hero .right img {
+.right img {
     position: relative;
     right: 50px;
     margin: 59px 68px 59px 57px;
     box-shadow: -2px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.hero .left p:first-of-type {
+.left p:first-of-type {
     font-size: 0.9375rem;
     font-weight: 600;
     line-height: 154%;
@@ -254,12 +250,12 @@ ul {
     color: var(--color-dark);
 }
 
-.hero .left i {
+.left i {
     color: var(--color-dark);
     margin-right: 9px;
 }
 
-.hero .left h1 {
+.left h1 {
     font-family: var(--font-h);
     font-size: 4.375rem;
     letter-spacing: -0.01em;
@@ -267,7 +263,7 @@ ul {
     font-weight: 700;
 }
 
-.hero .left p {
+.left p {
     font-size: 1.1875rem;
     font-weight: 400;
     line-height: 170%;
@@ -383,12 +379,12 @@ ul {
     color: var(--color-caps);
 }
 
-.about-us .flex-container {
+.flex-container {
     justify-content: space-between;
     align-items: center;
 }
 
-.about-us .image-container {
+.image-container {
     position: relative;
   }
 
@@ -435,7 +431,7 @@ ul {
     padding-bottom: 145px;
 }
 
-.breakfast h2,
+.breakfast h2, /*receptų skilčių pavadinimai*/
 .lunch h2,
 .dinner h2 {
     font-family: var(--font-h);
@@ -447,7 +443,7 @@ ul {
     margin: 9px 0 50px;
 }
 
-.breakfast1,
+.breakfast1, /*visų receptų ir ingredientų šriftai*/
 .breakfast2,
 .lunch1,
 .lunch2,
@@ -455,9 +451,10 @@ ul {
 .dinner2 {
     font-size: 1.125rem;
     line-height: 165%;
+    color: var(--color-caps);
 }
 
-.breakfast h3,
+.breakfast h3, /*receptų pavadinimai*/
 .lunch h3,
 .dinner h3 {
     font-family: var(--font-h);
@@ -490,8 +487,6 @@ ul {
 .breakfast img,
 .lunch img,
 .dinner img {
-    max-width: 100%;
-    height: auto;
     box-shadow: 2px 2px 20px var(--color-dark);
 }
 
@@ -543,7 +538,7 @@ ul {
     background-color: var(--color-main2);
 }
 
-.testimonials .top p {
+.top p {
     font-size: 1.1875rem;
     font-weight: 400;
     line-height: 180%;
@@ -605,8 +600,9 @@ ul {
     justify-content: space-between;
 }
 
-.contact .section-heading {
+.section-heading {
     align-self: center;
+    margin-right: 100px;
 }
 
 .contact h2 {
@@ -697,11 +693,6 @@ textarea {
     background-color: var(--color-main2);
 }
 
-.flex-container-button {
-    display: flex;
-    flex-direction: column;
-}
-
 .blog .section-heading {
     text-align: center;
     padding-top: 145px;
@@ -733,6 +724,7 @@ textarea {
 
 .blog-content-item {
     background-color: var(--color-main1);
+    /* border: solid 1px green; */
     max-width: 370px;
     display: block;
 }
@@ -762,7 +754,6 @@ textarea {
     border: solid 2px var(--color-dark);
     background-color: var(--color-main2);
     margin: 60px 0 150px 0;
-    align-self: center;
 }
 
 /*FOOT*/
