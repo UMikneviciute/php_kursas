@@ -600,9 +600,8 @@ ul {
     justify-content: space-between;
 }
 
-.section-heading {
+.contact .section-heading {
     align-self: center;
-    margin-right: 100px;
 }
 
 .contact h2 {
@@ -885,7 +884,7 @@ footer p {
     .about-us .flex-container,
     .testimonials-content.flex-container,
     .blog-content.flex-container,
-    #contact-us .flex-container {
+    #contact-us .container.flex-container {
         flex-direction:column;
     }
 
@@ -1135,5 +1134,18 @@ footer p {
 @media all and (max-width:600px){
     .testimonials-content-box {
         max-width: none;
+    }
+
+    .contact-form {
+        padding: 15px;
+        width: 100%;
+    }
+
+    .contact-form button {
+        width: 100%;
+    }
+
+    textarea {
+        width: 90%;
     }
 }
