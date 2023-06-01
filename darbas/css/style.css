@@ -689,7 +689,12 @@ textarea {
 
 /*BLOG*/
 
-.blog{
+.flex-container-button {
+    display: flex;
+    flex-direction: column;
+}
+
+.blog {
     background-color: var(--color-main2);
 }
 
@@ -754,6 +759,7 @@ textarea {
     border: solid 2px var(--color-dark);
     background-color: var(--color-main2);
     margin: 60px 0 150px 0;
+    align-self: center;
 }
 
 /*FOOT*/
