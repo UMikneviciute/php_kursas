@@ -1089,3 +1089,17 @@ footer p {
     }
 
 }
+
+@media all and (max-width:770px){
+    .breakfast .flex-container {
+        flex-direction: column;
+    }
+
+    .breakfast img,
+    .lunch img,
+    .dinner img {
+        width: 100%;
+        max-width: none;
+        margin: 0 auto;
+    }
+}
