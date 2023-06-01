@@ -320,9 +320,13 @@ ul {
     color: var(--color-caps);
 }
 
-.recipes .flex-container div {
-    max-width: 330px;
+.recipes .intro-item {
     height: 647px;
+    width: calc(33% - 20px);
+}
+
+.recipes .intro-item img {
+    width: 100%;
 }
 
 #more {
@@ -631,11 +635,12 @@ ul {
     border: 1px solid var(--color-dark);
     margin-bottom: 15px;
     color: var(--color-dark);
+    display: flex;
 }
 
 .contact-form input {
     background-color: var(--color-main2);
-    width: auto;
+    width: 100%;
     height: 65px;
     border: none;
     margin-left: 15px;
@@ -851,6 +856,7 @@ footer p {
 @media all and (max-width:1271px) {
     header,
     section,
+    .intro,
     .breakfast,
     .lunch,
     .dinner,
@@ -880,7 +886,6 @@ footer p {
     }
 
     .hero .flex-container,
-    .recipes .flex-container,
     .about-us .flex-container,
     .testimonials-content.flex-container,
     .blog-content.flex-container,
@@ -1092,7 +1097,7 @@ footer p {
         margin-right: 25px;
     }
 
-    .foot-main ul {
+    .foot-main div {
         margin-left: 15px;
     }
 
@@ -1100,6 +1105,22 @@ footer p {
         margin-left: 0;
     }
 
+}
+
+@media all and (max-width:840px){
+    .recipes .flex-container {
+        flex-direction: column;
+    }
+
+    .recipes .intro-item {
+        width: 50%;
+        height: auto;
+    }
+
+    .recipes button {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
 }
 
 @media all and (max-width:770px){
@@ -1132,6 +1153,14 @@ footer p {
 }
 
 @media all and (max-width:600px){
+    .about-us .image-container img {
+        width: 100%;
+    }
+
+    .about-heading{
+        width: 100%;
+    }
+
     .testimonials-content-box {
         max-width: none;
     }
@@ -1147,5 +1176,13 @@ footer p {
 
     textarea {
         width: 90%;
+    }
+
+    .foot-social.flex-container {
+        flex-wrap: wrap;
+    }
+
+    .foot .social-nav {
+        margin: 10px auto;
     }
 }

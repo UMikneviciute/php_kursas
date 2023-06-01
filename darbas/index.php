@@ -93,22 +93,22 @@
             <h2>Recipes</h2>
             <nav class="recipes">
                 <div class="flex-container">
-                    <div>
+                    <div class="intro-item">
                         <a href="#breakfast-recipes"><img src="../darbas/images/breakfast.jpg" alt="breakfast"></a>
                         <h3>Breakfast</h3>
-                        <p>Fuel your mornings with wholesome goodness and awaken your<span id="dots1">...</span><span id="more1"> taste buds to the delightful array of flavors that our plant-based breakfast recipes have to offer.</span></p><br><br>
+                        <p>Fuel your mornings with wholesome goodness and awaken your<span id="dots1">...</span><span id="more1"> taste buds to the delightful array of flavors that our plant-based breakfast recipes have to offer.</span></p><br>
                         <button id="myBtn1" onclick="toggleText('myBtn1', 'dots1', 'more1')">Read more</button>
                     </div>
-                    <div>
+                    <div class="intro-item">
                         <a href="#lunch-recipes"><img src="../darbas/images/lunch.jpg" alt="lunch"></a>
                         <h3>Lunch</h3>
-                        <p>Elevate your afternoons with a burst of nourishment and<span id="dots2">...</span><span id="more2"> culinary creativity as you explore our enticing whole food plant-based lunch recipes.</span></p><br><br>
+                        <p>Elevate your afternoons with a burst of nourishment and<span id="dots2">...</span><span id="more2"> culinary creativity as you explore our enticing whole food plant-based lunch recipes.</span></p><br>
                         <button id="myBtn2" onclick="toggleText('myBtn2', 'dots2', 'more2')">Read more</button>
                     </div>
-                    <div>
+                    <div class="intro-item">
                         <a href="#dinner-recipes"><img src="../darbas/images/dinner.jpg" alt="dinner"></a>
                         <h3>Dinner</h3>
-                        <p>Savor the rich and satisfying flavors of our<span id="dots3">...</span><span id="more3"> plant-based dinner recipes, carefully crafted to elevate your evenings and nourish your body with every delicious bite.</span></p><br><br>
+                        <p>Savor the rich and satisfying flavors of our plant-based dinner<span id="dots3">...</span><span id="more3"> recipes, carefully crafted to elevate your evenings and nourish your body with every delicious bite.</span></p><br>
                         <button id="myBtn3" onclick="toggleText('myBtn3', 'dots3', 'more3')">Read more</button>
                     </div>
                 </div>
