@@ -31,7 +31,7 @@
                 <ul class="flex-container">
                     <li><a href="#home">Home</a></li>
                     <li class="dropdown">
-                        <a href="#recipes" id="dropdown-mother">Recipes<i class="bi bi-caret-down-fill"></i></a>
+                        <a href="#recipes">Recipes<i class="bi bi-caret-down-fill"></i></a>
                         <ul class="dropdown-list">
                             <li><a href="#breakfast-recipes">Breakfast</a></li>
                             <li><a href="#lunch-recipes">Lunch</a></li>
@@ -47,20 +47,22 @@
                 <ul class="flex-container">
                     <li><a href="https://facebook.com/" target="_blank"><i class="bi bi-facebook"></i></a></li>
                     <li><a href="https://twitter.com/" target="_blank"><i class="bi bi-twitter"></i></a></li>
-                    <li><a href="https://instagram.com/" target="_blank"><i class="bi bi-instagram"></a></i></li>
+                    <li><a href="https://instagram.com/" target="_blank"><i class="bi bi-instagram"></i></a></li>
                 </ul>
             </nav>
             <nav class="mobile-nav">
                 <ul id="mMenu" class="flex-container">
                     <li><a href="#home">Home</a></li>
                     <li class="dropdown">
-                        <a href="javascript:void(0);" id="dropdown-mother" onclick="recipes()"><i class="bi bi-caret-left-fill"></i>Recipes</a>
+                        <a href="javascript:void(0);" onclick="recipes()"><i class="bi bi-caret-left-fill"></i>Recipes</a>
                         <ul id="mobile-flex" class="dropdown-list flex-container">
-                            <div class="mobile-dropdown flex-container">
-                                <li><a href="#breakfast-recipes">Breakfast</a></li>
-                                <li><a href="#lunch-recipes">Lunch</a></li>
-                                <li><a href="#dinner-recipes">Dinner</a></li>
-                            </div>
+                            <li>
+                                <ul class="mobile-dropdown flex-container">
+                                    <li><a href="#breakfast-recipes">Breakfast</a></li>
+                                    <li><a href="#lunch-recipes">Lunch</a></li>
+                                    <li><a href="#dinner-recipes">Dinner</a></li>
+                                </ul>
+                            </li>
                         </ul>
                     </li>
                     <li><a href="#about-us">About Us</a></li>
@@ -372,7 +374,7 @@
                     <ul class="flex-container">
                         <li><a href="https://facebook.com/" target="_blank"><i class="bi bi-facebook"></i></a></li>
                         <li><a href="https://twitter.com/" target="_blank"><i class="bi bi-twitter"></i></a></li>
-                        <li><a href="https://instagram.com/" target="_blank"><i class="bi bi-instagram"></a></i></li>
+                        <li><a href="https://instagram.com/" target="_blank"><i class="bi bi-instagram"></i></a></li>
                     </ul>
                 </nav>
             </div>
