@@ -962,9 +962,9 @@ footer p {
         padding-bottom: 145px;
     }
 
-    .breakfast2,
-    .lunch2,
-    .dinner2 {
+    .breakfast,
+    .lunch,
+    .dinner {
         padding-left: 25px;
     }
 
@@ -1170,6 +1170,33 @@ footer p {
         font-size: 0.6rem;
     }
 
+    #recipes h2, {
+        padding: 40px 0;
+        margin-bottom: 0;
+    }
+
+    .about-us .container {
+        margin: 40px 0;
+    }
+
+    .breakfast .container > p:first-of-type,
+    .lunch .container > p:first-of-type,
+    .dinner .container > p:first-of-type,
+    .blog .section-heading {
+        padding-top: 40px;
+    }
+
+    .breakfast1, .lunch1, .dinner1, .breakfast .container, .lunch .container, .dinner .container {
+        padding-bottom: 40px;
+    }
+
+    .testimonials-content, {
+        margin-bottom: 40px;
+    }
+
+    .contact h2 {
+        margin-top: 40px;
+    }
 
     .about-us .image-container img {
         width: 100%;

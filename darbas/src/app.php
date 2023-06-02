@@ -13,8 +13,10 @@
                 $subject = "Nauja žinutė";
                 $autorius = 'Nuo: ' . $vardas . ', ' . $email;
                 $zinute = htmlspecialchars($message);
-                //mail($to, $subject, $autorius, $zinute, $from);
-                //echo "<script>alert('Ačiū, gavome.')</script>";
+                mail($to, $subject, $autorius, $zinute, $from);
+                // Redirect to the same page using GET method
+                header("Location: index.php"); 
+                exit();
             }
         }  
     }

@@ -342,7 +342,7 @@
                 <h2>Get in touch with us!</h2>
                 <p>Share your ideas or any feedback. We are looking forward to hear from you!</p>
             </div>
-            <form id="contact-form" class="contact-form" action="index.php" method="post">
+            <form autocomplete="off" id="contact-form" class="contact-form" action="index.php" method="post">
                 <div class="input-icons">
                     <i class="bi bi-person"></i>
                     <input required type="text" name="name" placeholder="Name"><br>

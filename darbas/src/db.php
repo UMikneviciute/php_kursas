@@ -2,7 +2,7 @@
     define("DB_SERVER", "localhost");
     define("DB_USER", "root");
     define("DB_PASWORD", "");
-    define("DB_NAME", "recipes_forma");
+    define("DB_NAME", "forma90");
 
     $mysqli = new mysqli(DB_SERVER, DB_USER, DB_PASWORD, DB_NAME);
     if($mysqli->connect_error) {
