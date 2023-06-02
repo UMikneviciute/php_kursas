@@ -392,19 +392,19 @@
                 <div>
                     <h3>Utility Pages</h3>
                     <ul>
-                        <li>Start here</li>
-                        <li>Style guide</li>
-                        <li>404 not found</li>
-                        <li>Password protected</li>
-                        <li>Licenses</li>
-                        <li>Changelog</li>
+                        <li><a href="#">Start here</a></li>
+                        <li><a href="#">Style guide</a></li>
+                        <li><a href="#">404 not found</a></li>
+                        <li><a href="#">Password protected</a></li>
+                        <li><a href="#">Licenses</a></li>
+                        <li><a href="#">Changelog</a></li>
                     </ul>
                 </div>
                 <div>
                     <h3>Keep in Touch</h3>
                     <ul>
                         <li>Address: <span>24A Kingstone St, Los Vegas, USA.</span></li>
-                        <li>Mail: <a href="mailto:recipes@wholefood.com">support@doctors.com</a></li>
+                        <li>Mail: <a href="mailto:recipes@wholefood.com">support@recipes.com</a></li>
                         <li>Phone: <a href="tel:(+22)123-4567-900">(+22)123-4567-900</a></li>
                     </ul>
                 </div>

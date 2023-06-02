@@ -38,7 +38,6 @@ ul {
 }
 
 .site-header {
-    /* border: solid 1px; */
     background-color: var(--color-main2);
     width: 100%;
     display: block;
@@ -58,14 +57,12 @@ ul {
 }
 
 .container {
-    /* border: solid 1px red; */
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
 }
 
 .flex-container {
-    /* border: solid 1px yellow; */
     display: flex;
 }
 
@@ -84,7 +81,7 @@ ul {
 .social-nav li,
 .mobile-nav li {
     list-style: none;
-    display: inline-block; /*kas pasikeicia?*/
+    display: inline-block;
 }
 
 .site-header .social-nav li i {
@@ -206,7 +203,6 @@ ul {
 }
 
 .hero {
-    /* border: solid 1px magenta; */
     width: 100%;
     background-color: var(--color-main1);
 }
@@ -860,6 +856,10 @@ footer p {
         padding: 0 10px;
     }
 
+    .hero {
+        padding-right: 0;
+    }
+
     .hero .background {
         margin-right: 30px;
     }
@@ -1170,7 +1170,7 @@ footer p {
         font-size: 0.6rem;
     }
 
-    #recipes h2, {
+    #recipes h2 {
         padding: 40px 0;
         margin-bottom: 0;
     }
@@ -1190,10 +1190,11 @@ footer p {
         padding-bottom: 40px;
     }
 
-    .testimonials-content, {
+    .testimonials-content {
         margin-bottom: 40px;
     }
 
+    .testimonials-heading p,
     .contact h2 {
         margin-top: 40px;
     }
